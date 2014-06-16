@@ -28,7 +28,7 @@
 						<a tabindex="-1" href="#">Demand Generation - Caregiver</a>
 						<ul class="dropdown-menu">
 							<li>
-								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>merchendise">Merchendise</a>
+								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>merchendise">Merchandise</a>
 							</li>
 							<li>
 								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>print_media">Print Media</a>
