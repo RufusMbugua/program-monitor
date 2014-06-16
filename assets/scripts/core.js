@@ -280,7 +280,7 @@ function runGraph(chart_container, chart_type, chart_title, chart_series) {
 
 
 
-function pageHandler(base_url,activity) {
+function pageHandler(base_url, activity) {
     var activityID;
 
     $("." + activity + "_manual_update").click(function() {
@@ -454,5 +454,5 @@ function pageHandler(base_url,activity) {
 
     }
 
-    
+
 }
