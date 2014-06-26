@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var theclass;
-    $('.fa-expand.normal').click(function() {
+    $('.fa-expand.normal').click(function () {
         theclass = $(this).parent().parent().parent().attr('class');
         $('.' + theclass).hide();
         $(this).parent().parent().find('.inner').hide();
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(this).parent().parent().parent().removeClass('standard-graph');
         $(this).parent().parent().parent().addClass('x-large-graph');
     });
-    $('.fa-compress.normal').click(function() {
+    $('.fa-compress.normal').click(function () {
         $('.' + theclass).show();
         $(this).parent().parent().parent().removeClass('x-large-graph');
         $(this).parent().parent().parent().addClass('standard-graph');
@@ -32,7 +32,7 @@ $(document).ready(function() {
         $(this).parent().parent().find('.mini-graph-2').hide();
     });
 
-    $('.fa-expand.full-screen').click(function() {
+    $('.fa-expand.full-screen').click(function () {
         theclass = $(this).parent().parent().parent().attr('class');
         $('.' + theclass).hide();
         $(this).parent().parent().find('.inner').hide();
@@ -55,7 +55,7 @@ $(document).ready(function() {
         //var container_array = ['distribution_county_fullscreen'];
         //loadGraphSection(base_url, function_url_array, container_array);
     });
-    $('.fa-compress.full-screen').click(function() {
+    $('.fa-compress.full-screen').click(function () {
         $('.' + theclass).show();
         $(this).parent().parent().parent().removeClass('xx-large-graph');
         $(this).parent().parent().parent().addClass('standard-graph');
@@ -75,7 +75,7 @@ $(document).ready(function() {
         $('.guide').show();
     });
 
-    $('.fa-bar-chart-o').click(function() {
+    $('.fa-bar-chart-o').click(function () {
         $(this).parent().parent().find('.mini-graph').empty();
         $(this).parent().parent().find('.mini-graph-2').empty();
         $(this).parent().find('.fa-bar-chart-o').addClass('selected');
@@ -84,17 +84,17 @@ $(document).ready(function() {
         $(this).parent().parent().find('.mini-graph').show();
         $(this).parent().parent().find('.mini-graph-2').show();
     });
-    $('.fa-table').click(function() {
+    $('.fa-table').click(function () {
         $(this).parent().find('.fa-bar-chart-o').removeClass('selected');
         $(this).parent().find('.fa-table').addClass('selected');
         $(this).parent().parent().find('.mini-graph').hide();
         $(this).parent().parent().find('.mini-graph-2').hide();
         $(this).parent().parent().find('.mini').show();
     });
-    $('.fa-search').click(function() {
+    $('.fa-search').click(function () {
         showSearch();
     });
-    $('.search-close').click(function() {
+    $('.search-close').click(function () {
         hideSearch();
     });
     $(document).on('keydown', null, 'ctrl+z', showSearch);
@@ -105,10 +105,10 @@ function getHCWData(base_url, function_url) {
     var facilityTable, hcwTable;
     $.ajax({
         url: base_url + function_url,
-        beforeSend: function(xhr) {
+        beforeSend: function (xhr) {
             xhr.overrideMimeType("text/plain; charset=x-user-defined");
         },
-        success: function(data) {
+        success: function (data) {
             $('#hcw_list').empty();
             $('#facility_list').empty();
             var obj = $.parseJSON(data);
@@ -120,7 +120,7 @@ function getHCWData(base_url, function_url) {
             $('#facility_total_trained_private_hcw').text(obj['participant_data']['private']);
 
             facilityTable = '<table class="dataTable"><thead><th>Facility MFL Code<i class="fa"></i></th> <th>Facility Name<i class="fa"></i></th></thead><tbody> ';
-            $.each(obj['facility_data']['facility_list'], function(k, v) {
+            $.each(obj['facility_data']['facility_list'], function (k, v) {
                 facilityTable = facilityTable + '<tr><td>' + v['mfl_code'] + '</td><td>' + v['fac_name'] + '</td></tr>';
             });
             facilityTable = facilityTable + '</tbody></table>';
@@ -130,7 +130,7 @@ function getHCWData(base_url, function_url) {
             $('#hcw_total_trained').text(obj['participant_data']['participant_number_trained']);
 
             hcwTable = '<table class="dataTable"><thead><th>Participant Name<i class="fa"></i></th> <th>Facility Name<i class="fa"></i></th><th>Cadre<i class="fa"></i></th></thead><tbody> ';
-            $.each(obj['participant_data']['participant_list'], function(k, v) {
+            $.each(obj['participant_data']['participant_list'], function (k, v) {
                 hcwTable = hcwTable + '<tr><td>' + v['names_of_participant'] + '</td><td>' + v['fac_name'] + '</td><td>' + v['cadre'] + '</td></tr>';
             });
             hcwTable = hcwTable + '</tbody></table>';
@@ -155,10 +155,10 @@ function getTOTData(base_url, function_url) {
     var facilityTable, hcwTable;
     $.ajax({
         url: base_url + function_url,
-        beforeSend: function(xhr) {
+        beforeSend: function (xhr) {
             xhr.overrideMimeType("text/plain; charset=x-user-defined");
         },
-        success: function(data) {
+        success: function (data) {
 
             var obj = $.parseJSON(data);
             $('#tot_total_trained').text(obj['participant_data']['participant_number_trained']);
@@ -200,46 +200,26 @@ function hideSearch() {
     }
 }
 
-function loadGraph(base_url, function_url, container) {
+function loadGraph(base_url, function_url, container, chart_type) {
+    switch (chart_type) {
+    case 'line':
+        plot_line();
+        break;
+    case 'grouped':
+        plot_grouped();
+        break;
+    case 'pie':
+        plot_pie();
+        break;
+
+    }
     $('#' + container).load(base_url + function_url);
 }
-/**
- * [loadGraphSection loops through an array of container IDs to plot the graphs]
- * @param  {[array]} containerArray [description]
- * @param  {[string]} base_url       [description]
- * @param  {[string]} function_url   [description]
- * @param  {[string]} container      [description]
- * @return {[none]}                [description]
- */
-function loadGraphSection(base_url, function_url_array, container_array) {
-    //alert('Stuff');
-    count = 0;
-    $.each(container_array, function(index, value) {
-        //alert (base_url+function_url_array[count]+'  '+ value);
-        loadGraph(base_url, function_url_array[count], value);
-        count++;
-    });
-}
 
-function loadGraphs(base_url, function_url) {
-    $.ajax({
-        url: base_url + function_url,
-        beforeSend: function(xhr) {
-            xhr.overrideMimeType("text/plain; charset=x-user-defined");
-        },
-        success: function(data) {
-            obj = jQuery.parseJSON(data);
-            $("#chart_category").val(obj['cat']);
-            $('#graph').empty();
-            $('#graph').append('<div style="width:100%" id="' + obj['chart_container'] + '"></div>');
-            runGraph(obj['chart_container'], obj['chart_type'], obj['chart_size'], obj['chart_title'], obj['chart_stacking'], obj['chart_categories'], obj['chart_series']);
+function plot_pie(chart_container, data_source, series_data, chart_title) {
+    var dataSource = data_source;
 
-        }
-    });
-}
-
-function runGraph(chart_container, chart_type, chart_title, chart_series) {
-    $("#" + chart_container).chart_type({
+    $("#" + chart_container).dxPieChart({
 
         dataSource: dataSource,
         commonSeriesSettings: {
@@ -248,7 +228,7 @@ function runGraph(chart_container, chart_type, chart_title, chart_series) {
                 connector: {
                     visible: true
                 },
-                customizeText: function(value) {
+                customizeText: function (value) {
                     return value.argumentText;
                 }
             }
@@ -265,10 +245,10 @@ function runGraph(chart_container, chart_type, chart_title, chart_series) {
                 weight: 200
             }
         },
-        series: chart_series,
+        series: series_data,
         tooltip: {
             enabled: true,
-            customizeText: function(value) {
+            customizeText: function (value) {
                 return value.argumentText + ' : ' + value.percentText;
             }
         },
@@ -278,35 +258,166 @@ function runGraph(chart_container, chart_type, chart_title, chart_series) {
     });
 }
 
+function plot_line(chart_container, data_source, series_data, chart_title) {
+    var dataSource = data_source;
 
+    $("#" + chart_container).dxChart({
+        dataSource: dataSource,
+
+        series: series_data,
+        argumentAxis: {
+            grid: {
+                visible: false
+            }
+        },
+        tooltip: {
+            enabled: true,
+            customizeText: function (value) {
+                return value.valueText + ' in ' + value.argumentText;
+            }
+        },
+        title: {
+            text: chart_title,
+            verticalAlignment: 'bottom',
+            font: {
+                color: '#3276b1',
+                family: 'SourceSansPro-Regular',
+                opacity: 0.75,
+                size: 16,
+                weight: 200
+            }
+        },
+        legend: {
+            verticalAlignment: "bottom",
+            horizontalAlignment: "center"
+        },
+        commonPaneSettings: {
+            border: {
+                visible: false,
+                right: false
+            }
+        }
+    });
+}
+
+function plot_grouped(chart_container, data_source, series_data, argument, chart_type, chart_title) {
+    var dataSource = data_source;
+
+    $("#" + chart_container).dxChart({
+        dataSource: dataSource,
+        commonSeriesSettings: {
+            argumentField: argument,
+            type: chart_type,
+            label: {
+                visible: true,
+                connector: {
+                    visible: true
+                },
+                customizeText: function (value) {
+                    return value.valueText;
+                }
+            }
+
+        },
+        series: series_data,
+        argumentAxis: {
+            type: 'continuous',
+            axisDivisionFactor: 1000,
+            grid: {
+                visible: false
+            }
+        },
+        tooltip: {
+            enabled: true,
+            customizeText: function (value) {
+                return value.valueText + ' ' + value.seriesName + '(s) in ' + value.argumentText;
+            }
+        },
+        title: {
+            text: chart_title,
+            verticalAlignment: 'bottom',
+            font: {
+                color: '#3276b1',
+                family: 'SourceSansPro-Regular',
+                opacity: 0.75,
+                size: 16,
+                weight: 200
+            }
+        },
+        legend: {
+            verticalAlignment: "bottom",
+            horizontalAlignment: "center"
+        },
+        commonPaneSettings: {
+            border: {
+                visible: true,
+                right: false
+            }
+        }
+    });
+}
+/**
+ * [loadGraphSection loops through an array of container IDs to plot the graphs]
+ * @param  {[array]} containerArray [description]
+ * @param  {[string]} base_url       [description]
+ * @param  {[string]} function_url   [description]
+ * @param  {[string]} container      [description]
+ * @return {[none]}                [description]
+ */
+function loadGraphSection(base_url, function_url_array, container_array,type_array) {
+    //alert('Stuff');
+    count = 0;
+    $.each(container_array, function (index, value) {
+        //alert (base_url+function_url_array[count]+'  '+ value);
+        loadGraph(base_url, function_url_array[count], value);
+        count++;
+    });
+}
+
+function loadGraphs(base_url, function_url) {
+    $.ajax({
+        url: base_url + function_url,
+        beforeSend: function (xhr) {
+            xhr.overrideMimeType("text/plain; charset=x-user-defined");
+        },
+        success: function (data) {
+            obj = jQuery.parseJSON(data);
+            $("#chart_category").val(obj.cat);
+            $('#graph').empty();
+            $('#graph').append('<div style="width:100%" id="' + obj.chart_container + '"></div>');
+            runGraph(obj.chart_container, obj.chart_type, obj.chart_size, obj.chart_title, obj.chart_stacking, obj.chart_categories, obj.chart_series);
+
+        }
+    });
+}
 
 function pageHandler(base_url, activity) {
     var activityID;
 
-    $("." + activity + "_manual_update").click(function() {
+    $("." + activity + "_manual_update").click(function () {
         $('#' + activity + '_manual_update').modal('show');
         activityID = $(this).attr('id');
-        $('#' + activity + '_manual_update').delay(2000).queue(function(nxt) {
+        $('#' + activity + '_manual_update').delay(2000).queue(function (nxt) {
             $('#activity_id_man').val(activityID);
             nxt();
         });
     });
 
 
-    $('.' + activity + '_activity_source').click(function() {
+    $('.' + activity + '_activity_source').click(function () {
         $('#source_data').empty();
         $('#source_data').append('<div class="la-anim-1-mini"></div>');
         $('#source_data > .la-anim-1-mini').addClass('la-animate');
         $('#activity_name').empty();
         activityID = $(this).attr('id');
         $('#' + activity + '_files_modal').modal('show');
-        $('#' + activity + '_files_modal').delay(2000).queue(function(nxt) {
+        $('#' + activity + '_files_modal').delay(2000).queue(function (nxt) {
             $('#source_data').load(base_url + 'imci/load_activity_source/' + activityID);
             $('#activity_name').load(base_url + 'imci/load_activity_name/' + activityID);
 
             nxt();
         });
-        $('#' + activity + '_files_modal').delay(4000).queue(function(nxt) {
+        $('#' + activity + '_files_modal').delay(4000).queue(function (nxt) {
             $(".dataTable").dataTable();
 
             nxt();
@@ -314,10 +425,10 @@ function pageHandler(base_url, activity) {
     });
 
 
-    $("." + activity + "_activity_upload").click(function() {
+    $("." + activity + "_activity_upload").click(function () {
         $('#' + activity + '_upload_activity').modal('show');
         activityID = $(this).attr('id');
-        $('#upload_button').delay(2000).queue(function(nxt) {
+        $('#upload_button').delay(2000).queue(function (nxt) {
             $('#activity_id').val(activityID);
 
             nxt();
@@ -326,13 +437,13 @@ function pageHandler(base_url, activity) {
     });
 
 
-    $("#" + activity + "_uploadActivityBtn").click(function() {
+    $("#" + activity + "_uploadActivityBtn").click(function () {
         $('#' + activity + '_upload_form').submit();
     });
 
 
 
-    $(".add").click(function() {
+    $(".add").click(function () {
         //  when add is clicked this function
         $('.datepicker').datepicker('remove');
 
@@ -361,7 +472,7 @@ function pageHandler(base_url, activity) {
         return false;
     });
 
-    $('.remove').click(function() {
+    $('.remove').click(function () {
         id = $(this).parent().parent().attr("id");
         if (id !== 0) {
             $(this).parent().parent().remove();
@@ -381,21 +492,21 @@ function pageHandler(base_url, activity) {
         autoclose: true
     });
 
-    $('#export_csv').click(function() {
+    $('#export_csv').click(function () {
         link = $(this).attr('data-link');
         window.open(link + activityID);
     });
 
-    $('#export_pdf').click(function() {
+    $('#export_pdf').click(function () {
         link = $(this).attr('data-link');
         window.open(link + activityID);
     });
 
-    $('.modal-title > a#export_pdf').click(function() {
+    $('.modal-title > a#export_pdf').click(function () {
         link = $(this).attr('data-link');
     });
 
-    $('.facilityoption').change(function() {
+    $('.facilityoption').change(function () {
         val = $(this).val();
         text = $(this).find('option:selected').text();
         //alert(text);
@@ -435,14 +546,6 @@ function pageHandler(base_url, activity) {
 
 
     }
-    $('.fa-bar-chart-o').click(function() {
-        var activity_name = 'Train an expanded pool of HCWs';
-        activity_name = encodeURIComponent(activity_name);
-        var base_url = '<?php echo base_url(); ?>';
-        var function_url_array = ['imci/imci_frequency/' + activity_name, 'imci/imci_training_county', 'imci/imci_cadre'];
-        var container_array = ['training_frequency', 'training_coverage', 'training_cadre'];
-        loadGraphSection(base_url, function_url_array, container_array);
-    });
 
 
 

@@ -339,4 +339,13 @@ echo form_close(); ?>
         $('#policy_link').click(function(){
             window.open(base_url+'guidelines_policy',"_parent");
 });
+     $('.fa-bar-chart-o').click(function() {
+        var activity_name = 'Train an expanded pool of HCWs';
+        activity_name = encodeURIComponent(activity_name);
+
+        var function_url_array = ['imci/imci_frequency/' + activity_name, 'imci/imci_training_county', 'imci/imci_cadre'];
+        var container_array = ['training_frequency', 'training_coverage', 'training_cadre'];
+        loadGraphSection(base_url, function_url_array, container_array);
+    });
+
 </script>

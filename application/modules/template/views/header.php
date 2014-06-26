@@ -5,8 +5,7 @@
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="navbar-collapse collapse" id="">
-		<a class="navbar-brand"> <?php echo $brand
-		?></a>
+		<a class="navbar-brand"> <?php echo $brand; ?></a>
 		<ul class="nav navbar-nav">
 			<li>
 				<a class="run-anim" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>county_profile">County Profile</a>
@@ -14,15 +13,8 @@
 			<li class="dropdown">
 				<a href=""class="dropdown-toggle" data-toggle="dropdown">Sub-Programs<b class="caret"></b></a>
 				<ul class="dropdown-menu">	
-					<li class="dropdown-submenu">
-						<a tabindex="-1" href="#">Assessment</a>
-						<ul class="dropdown-menu">
-							<li>
-								<a class="run-anim" href="#" data-anim="la-anim-1" tabindex="-1" data-link="<?php echo base_url(); ?>baseline">Baseline</a>
-							</li>			
-							
-						</ul>
-						<li class="divider"></li>
+					<li>
+						<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" tabindex="-1" data-link="<?php echo $this->config->item('project_url'); ?>">MNCH Assessment</a>
 					</li>	
 					<li class="dropdown-submenu">
 						<a tabindex="-1" href="#">Demand Generation - Caregiver</a>
@@ -101,7 +93,7 @@
 								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>quantification_forecasting">Quantification & Forecasting</a>
 							</li>
 							<li>
-								<a class="run-anim" href="#" data-anim="la-anim-1" tabindex="-1" data-link="<?php echo base_url(); ?>hcmp">HCMP</a>
+								<a class="run-anim" href="#" data-anim="la-anim-1" tabindex="-1" data-link="<?php echo $this->config->item('hcmp_url'); ?>">HCMP</a>
 							</li>
 							
 							

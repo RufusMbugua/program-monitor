@@ -19,16 +19,18 @@
 $navbar-default-link-color:#fff;
 $navbar-default-link-hover-color:#ccc;
 @import "bourbon/bourbon";
-@import "typeplate/typeplate";
-@import "typeplate/vars-typeplate";
+
 @import "variables";
 @import "bootstrap";
+@import "typeplate/_typeplate";
+@import "typeplate/vars-typeplate";
 
 @import "CSS:../../styles/foundation/foundation-icons";
 
 body{
     background:#edf0f1;
-    overflow:hidden;
+    overflow-x:hidden;
+     @extend .delta;
 }
 //Variables
 $nav-color:#384042;
@@ -56,7 +58,7 @@ $stat_color_2 : #5bc0de !important;
     height: 90%;
     padding: 0 1.5% 0 1.5%;
     overflow-y: auto;
-    font-size: 1em !important;
+    @extend .epsilon;
 }
     .summary{
         border-bottom:1px solid $tile-header-color;
@@ -65,6 +67,7 @@ $stat_color_2 : #5bc0de !important;
             width:70%;
         }
         .digit{
+            text-align: right;
             float:right;
             color:$digit-color;
             font-weight:bold;
@@ -89,12 +92,12 @@ li a{
 h3{
     margin:0;
     margin-bottom:10px;
+    @extend .gamma;
         background:$tile-header-color;
         font:{
             family: SourceSansPro-Regular;
-            size: 1.7em;
             weight: normal;
-            color:#666;
+            color:#666 !important;
         }
         padding:5px;
         i{
@@ -131,7 +134,7 @@ h3{
     @extend .col-md-9;
 
     .inner{
-        @include inner-style(30%);
+        @include inner-style(auto);
     }
     .inner-mini{
         @include inner-style(11%);
@@ -144,7 +147,7 @@ h3{
 .stat{
     margin-right:2%;
 
-            font-size:1.5em;
+            @extend .delta;
             display:inline-block;
             vertical-align: top;
             font-family: SourceSansPro-Regular;
@@ -185,8 +188,6 @@ h3{
             display:inline-block;
             }
 
-
-
             }
 #county{
     margin-top:1%;
@@ -198,10 +199,10 @@ h3{
     @extend .col-md-3;
 
     .inner{
-        @include inner-style(25%);
+        @include inner-style(10%);
     }
     .inner-mini{
-        @include inner-style(10%);
+        @include inner-style(5%);
     }
 
 }
@@ -245,7 +246,7 @@ h3{
     position:absolute;
     top:30%;
     left:0;
-    font-size:2.5em;
+    @extend .zeta;
     .inner{
         @include inner-style(35%);
         padding:0;
@@ -253,6 +254,7 @@ h3{
             @extend .nav;
             @extend .nav-pills;
             @extend .nav-stacked;
+            margin-bottom: 0 !important;
             padding:0;
             li{
                 a{
@@ -416,9 +418,7 @@ padding:10px;
     .inner-mini{
         @include inner-style(10%);
         .stat{
-            font-size:1.2em;
-
-
+           @extend .delta;
         }
         overflow:hidden;
     }
@@ -577,7 +577,7 @@ span{
  * 	Table
  */
 table {
-    font-size: 1em !important;
+    @extend .zeta;
 }
 .remove {
     cursor: pointer;

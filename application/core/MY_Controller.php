@@ -1,6 +1,6 @@
 <?php
 (defined('BASEPATH')) OR exit('No direct script access allowed');
-error_reporting(1);
+//error_reporting(1);
 /* The MX_Controller class is autoloaded as required */
 
 class MY_Controller extends MX_Controller
