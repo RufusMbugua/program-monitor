@@ -89,6 +89,13 @@ $stat_color_2 : #5bc0de !important;
 li a{
     color:$link-color;
 }
+#site-title{
+    div{
+        h3{
+            margin-bottom:0;
+        }
+    }
+}
 h3{
     margin:0;
     margin-bottom:10px;

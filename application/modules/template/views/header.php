@@ -1,5 +1,12 @@
 
 <nav class="project-nav" role="navigation" id="myBar">
+
+	<div id="site-title">
+		<div align="center">
+			<h3 style="background:white"><a href="#"><img src="<?php echo $this->config->item('project_url')?>/images/logo_combined.png" /></a></h3>
+		</div>
+
+	</div>
 	<a id="setCollapse"href="javascript:;" class="navbar-toggle collapsed"><i class="fa fa-list-ul"></i> </a>
 	<!-- Brand and toggle get grouped for better mobile display -->
 
@@ -10,12 +17,25 @@
 			<li>
 				<a class="run-anim" href="#" data-anim="la-anim-1" data-link="<?php echo base_url(); ?>county_profile">County Profile</a>
 			</li>
+			<li class="divider"></li>
 			<li class="dropdown">
 				<a href=""class="dropdown-toggle" data-toggle="dropdown">Sub-Programs<b class="caret"></b></a>
 				<ul class="dropdown-menu">	
-					<li>
-						<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" tabindex="-1" data-link="<?php echo $this->config->item('project_url'); ?>">MNCH Assessment</a>
-					</li>	
+					<li class="dropdown-submenu">
+						<a tabindex="-1" href="#">MNCH Analytics</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo $this->config->item('project_url'); ?>/mnh/analytics">MNH Analytics</a>
+							</li>
+							<li>
+								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo $this->config->item('project_url'); ?>/ch/analytics">CH Analytics</a>
+							</li>
+							<li>
+								<a class="run-anim" tabindex="-1" href="#" data-anim="la-anim-1" data-link="<?php echo $this->config->item('project_url'); ?>/hcw/analytics">IMCI Analytics</a>
+							</li>
+						</ul>
+					</li>
+					<li class="divider"></li>	
 					<li class="dropdown-submenu">
 						<a tabindex="-1" href="#">Demand Generation - Caregiver</a>
 						<ul class="dropdown-menu">

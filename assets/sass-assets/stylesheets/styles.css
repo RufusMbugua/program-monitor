@@ -10183,7 +10183,12 @@ li a {
   color: #428bca;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
+#site-title div h3 {
+  margin-bottom: 0;
+}
+
+/* line 99, ../sass/styles.scss */
 h3 {
   margin: 0;
   margin-bottom: 10px;
@@ -10193,7 +10198,7 @@ h3 {
   font-color: #666 !important;
   padding: 5px;
 }
-/* line 103, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 h3 i {
   color: #aaa;
   font-weight: bold;
@@ -10201,28 +10206,28 @@ h3 i {
   cursor: pointer;
   margin-left: 10px;
 }
-/* line 110, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 h3 i.selected {
   color: #333;
 }
-/* line 113, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 h3 i:hover {
   color: #333;
   cursor: hand;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .row {
   padding: 0 5% 0 5%;
 }
 
-/* line 121, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .project-nav {
   background: #384042;
   color: white;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .outer {
   background-color: #fff;
   border-radius: 3px;
@@ -10231,12 +10236,12 @@ h3 i:hover {
   font-size: 0.8em !important;
 }
 
-/* line 131, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .activities {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 136, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .activities .inner {
   overflow-y: auto;
   height: auto;
@@ -10275,7 +10280,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 139, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .activities .inner-mini {
   overflow-y: auto;
   height: 11%;
@@ -10316,12 +10321,12 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .scrollable {
   overflow-y: auto !important;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 .stat {
   margin-right: 2%;
   display: inline-block;
@@ -10329,19 +10334,19 @@ h3 i:hover {
   font-family: SourceSansPro-Regular;
   text-align: center;
 }
-/* line 155, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 .stat span.digit {
   color: #3276b1 !important;
   font-size: 1.3em;
   margin-left: 15px;
   display: block;
 }
-/* line 161, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .stat span.text {
   padding-top: 5%;
   display: block;
 }
-/* line 165, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .stat .icon, .stat .icon-alt {
   float: left;
   margin-top: 5%;
@@ -10353,33 +10358,33 @@ h3 i:hover {
   background: #3276b1 !important;
   color: white;
 }
-/* line 176, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .stat .icon i, .stat .icon-alt i {
   margin-top: 13px;
   font-size: 1.5em;
 }
-/* line 182, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .stat .icon-alt {
   background: #5bc0de !important;
 }
-/* line 186, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .stat div {
   vertical-align: top;
   display: inline-block;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 #county {
   margin-top: 1%;
   font-size: 1.3em;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .guide {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 201, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .guide .inner {
   overflow-y: auto;
   height: 10%;
@@ -10418,7 +10423,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 204, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .guide .inner-mini {
   overflow-y: auto;
   height: 5%;
@@ -10458,12 +10463,12 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .x-large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 214, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .x-large-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10503,32 +10508,32 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 218, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .x-large-graph .inner.mini, .x-large-graph .inner.mini-graph, .x-large-graph .inner.mini-graph-2 {
   width: 24.7%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 222, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 .x-large-graph .inner.mini table, .x-large-graph .inner.mini-graph table, .x-large-graph .inner.mini-graph-2 table {
   font-size: 0.7em !important;
 }
-/* line 227, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .x-large-graph .inner.mini-graph-2 {
   width: 49%;
 }
-/* line 230, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .x-large-graph .table {
   max-height: 100%;
   overflow-y: scroll;
 }
 
-/* line 235, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 240, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .large-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10568,13 +10573,13 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 .side-nav {
   position: absolute;
   top: 30%;
   left: 0;
 }
-/* line 250, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .side-nav .inner {
   overflow-y: auto;
   height: 35%;
@@ -10614,36 +10619,36 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 253, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .side-nav .inner ul {
   margin-bottom: 0 !important;
   padding: 0;
 }
-/* line 260, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .side-nav .inner ul li a {
   color: #333;
 }
-/* line 263, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .side-nav .inner ul li a:hover {
   color: #428bca;
 }
 
-/* line 272, ../sass/styles.scss */
+/* line 279, ../sass/styles.scss */
 .panel-collapse {
   padding: 10px;
 }
 
-/* line 275, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 .panel-body {
   border-top: none !important;
 }
 
-/* line 278, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .panel-group {
   margin-top: 10px;
 }
 
-/* line 283, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 .typeahead,
 .tt-query,
 .tt-hint {
@@ -10653,24 +10658,24 @@ h3 i:hover {
   outline: none;
 }
 
-/* line 291, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 .typeahead {
   background-color: #fff;
 }
 
-/* line 297, ../sass/styles.scss */
+/* line 304, ../sass/styles.scss */
 .tt-query {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 303, ../sass/styles.scss */
+/* line 310, ../sass/styles.scss */
 .tt-hint {
   color: #999999;
 }
 
-/* line 307, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .tt-dropdown-menu {
   background: #fff;
   width: 100%;
@@ -10681,33 +10686,33 @@ h3 i:hover {
   cursor: hand;
 }
 
-/* line 317, ../sass/styles.scss */
+/* line 324, ../sass/styles.scss */
 .tt-suggestion {
   padding: 3px 20px;
   font-size: 1.2em;
   line-height: 24px;
 }
 
-/* line 323, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 .tt-suggestion.tt-cursor {
   color: #fff;
   background-color: #3276b1;
 }
 
-/* line 329, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 .tt-suggestion p {
   margin: 0;
 }
 
-/* line 332, ../sass/styles.scss */
+/* line 339, ../sass/styles.scss */
 #search-bar {
   padding-bottom: 1%;
 }
-/* line 335, ../sass/styles.scss */
+/* line 342, ../sass/styles.scss */
 #search-bar span {
   width: 100%;
 }
-/* line 337, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 #search-bar span input {
   width: 100%;
   padding: 8px 12px;
@@ -10716,7 +10721,7 @@ h3 i:hover {
   box-shadow: 0px 1px 5px 0px #d3d3d3;
 }
 
-/* line 349, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 .search-section .inner {
   overflow-y: auto;
   height: 85%;
@@ -10756,19 +10761,19 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 353, ../sass/styles.scss */
+/* line 360, ../sass/styles.scss */
 .main, .search {
   position: absolute;
   width: 100%;
   height: 90%;
 }
 
-/* line 358, ../sass/styles.scss */
+/* line 365, ../sass/styles.scss */
 .standard-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 363, ../sass/styles.scss */
+/* line 370, ../sass/styles.scss */
 .standard-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10808,19 +10813,19 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 367, ../sass/styles.scss */
+/* line 374, ../sass/styles.scss */
 .standard-graph .inner.mini {
   width: 24.7%;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 373, ../sass/styles.scss */
+/* line 380, ../sass/styles.scss */
 .standard-graph-lg {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 378, ../sass/styles.scss */
+/* line 385, ../sass/styles.scss */
 .standard-graph-lg .inner {
   overflow-y: auto;
   height: 37.5%;
@@ -10860,17 +10865,17 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 381, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 .standard-graph-lg .inner .graph {
   height: 80% !important;
 }
 
-/* line 387, ../sass/styles.scss */
+/* line 394, ../sass/styles.scss */
 .xx-large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 392, ../sass/styles.scss */
+/* line 399, ../sass/styles.scss */
 .xx-large-graph .inner {
   overflow-y: auto;
   height: 90%;
@@ -10910,28 +10915,28 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 395, ../sass/styles.scss */
+/* line 402, ../sass/styles.scss */
 .xx-large-graph .inner .graph {
   height: 100% !important;
 }
-/* line 399, ../sass/styles.scss */
+/* line 406, ../sass/styles.scss */
 .xx-large-graph .inner.mini {
   width: 49%;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 406, ../sass/styles.scss */
+/* line 413, ../sass/styles.scss */
 .map {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 410, ../sass/styles.scss */
+/* line 417, ../sass/styles.scss */
 .map .map-info {
   font-size: 1.4em;
   color: #666;
 }
-/* line 415, ../sass/styles.scss */
+/* line 422, ../sass/styles.scss */
 .map .inner {
   overflow-y: auto;
   height: 62.5%;
@@ -10970,7 +10975,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 418, ../sass/styles.scss */
+/* line 425, ../sass/styles.scss */
 .map .inner-mini {
   overflow-y: auto;
   height: 10%;
@@ -11011,7 +11016,7 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 426, ../sass/styles.scss */
+/* line 433, ../sass/styles.scss */
 table {
   width: 100%;
   margin: auto;
@@ -11020,12 +11025,12 @@ table {
 /*
  * DropDown Submenu
  */
-/* line 437, ../sass/styles.scss */
+/* line 444, ../sass/styles.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 440, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -11036,12 +11041,12 @@ table {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 449, ../sass/styles.scss */
+/* line 456, ../sass/styles.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 452, ../sass/styles.scss */
+/* line 459, ../sass/styles.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -11056,17 +11061,17 @@ table {
   margin-right: -10px;
 }
 
-/* line 465, ../sass/styles.scss */
+/* line 472, ../sass/styles.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff;
 }
 
-/* line 468, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 471, ../sass/styles.scss */
+/* line 478, ../sass/styles.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -11075,60 +11080,60 @@ table {
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 479, ../sass/styles.scss */
+/* line 486, ../sass/styles.scss */
 .btn, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
   margin-top: 10px;
 }
 
-/* line 482, ../sass/styles.scss */
+/* line 489, ../sass/styles.scss */
 .btn i, .dataTables_paginate.paging_full_numbers a i, a.paginate_button i, a.paginate_active i {
   margin-right: 5px;
 }
 
-/* line 485, ../sass/styles.scss */
+/* line 492, ../sass/styles.scss */
 .modal-footer > button {
   margin-top: -15px;
 }
 
-/* line 488, ../sass/styles.scss */
+/* line 495, ../sass/styles.scss */
 .date {
   padding-right: 2%;
   font-size: 0.8em;
 }
 
-/* line 492, ../sass/styles.scss */
+/* line 499, ../sass/styles.scss */
 .error {
   color: red;
 }
 
-/* line 495, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
 .error i {
   padding-right: 10px;
 }
 
-/* line 498, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 td a {
   margin-right: 10px;
 }
 
-/* line 501, ../sass/styles.scss */
+/* line 508, ../sass/styles.scss */
 td a:hover {
   text-decoration: none;
 }
 
-/* line 505, ../sass/styles.scss */
+/* line 512, ../sass/styles.scss */
 .myModal {
   top: 100px !important;
   overflow: hidden !important;
 }
 
-/* line 509, ../sass/styles.scss */
+/* line 516, ../sass/styles.scss */
 .modal {
   top: 150px !important;
   overflow: hidden !important;
 }
 
-/* line 513, ../sass/styles.scss */
+/* line 520, ../sass/styles.scss */
 .navbar-brand {
   font-size: 2em !important;
 }
@@ -11136,12 +11141,12 @@ td a:hover {
 /*
  * DropDown Submenu
  */
-/* line 520, ../sass/styles.scss */
+/* line 527, ../sass/styles.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 523, ../sass/styles.scss */
+/* line 530, ../sass/styles.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -11152,12 +11157,12 @@ td a:hover {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 532, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 535, ../sass/styles.scss */
+/* line 542, ../sass/styles.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -11172,17 +11177,17 @@ td a:hover {
   margin-right: -10px;
 }
 
-/* line 548, ../sass/styles.scss */
+/* line 555, ../sass/styles.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff;
 }
 
-/* line 551, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 554, ../sass/styles.scss */
+/* line 561, ../sass/styles.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -11194,19 +11199,19 @@ td a:hover {
 /**
 Span Styling
 */
-/* line 564, ../sass/styles.scss */
+/* line 571, ../sass/styles.scss */
 .map-footer {
   color: #666;
 }
-/* line 566, ../sass/styles.scss */
+/* line 573, ../sass/styles.scss */
 .map-footer span {
   padding: 5px;
 }
-/* line 568, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 .map-footer span i {
   padding-right: 5px;
 }
-/* line 571, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .map-footer span .value {
   font-weight: bolder;
 }
@@ -11214,12 +11219,12 @@ Span Styling
 /**
  * 	Table
  */
-/* line 582, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 .remove {
   cursor: pointer;
 }
 
-/* line 585, ../sass/styles.scss */
+/* line 592, ../sass/styles.scss */
 .remove:hover {
   cursor: hand;
 }
@@ -11227,104 +11232,104 @@ Span Styling
 /**
  * 	Extra Divs
  */
-/* line 592, ../sass/styles.scss */
+/* line 599, ../sass/styles.scss */
 .reporting {
   height: 300px;
   width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 597, ../sass/styles.scss */
+/* line 604, ../sass/styles.scss */
 .reporting label, .reportingBar label {
   vertical-align: top;
   display: inline-block;
   width: 40%;
 }
 
-/* line 602, ../sass/styles.scss */
+/* line 609, ../sass/styles.scss */
 .reporting .progress, .reportingBar .progress {
   display: inline-block;
   width: 55%;
   margin-bottom: 0;
 }
 
-/* line 607, ../sass/styles.scss */
+/* line 614, ../sass/styles.scss */
 #countyHeader {
   width: 35%;
 }
 
-/* line 610, ../sass/styles.scss */
+/* line 617, ../sass/styles.scss */
 #countyHeader, #progressHeader {
   background: #e3e3e3;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 615, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 #progressHeader {
   width: 60%;
 }
 
-/* line 618, ../sass/styles.scss */
+/* line 625, ../sass/styles.scss */
 .progressRow {
   padding: 2%;
   border-bottom: 1px solid #bbbbbb;
 }
 
-/* line 622, ../sass/styles.scss */
+/* line 629, ../sass/styles.scss */
 .reportingLabel {
   width: 30%;
   float: right;
 }
 
-/* line 626, ../sass/styles.scss */
+/* line 633, ../sass/styles.scss */
 .reportingLabel h6 {
   display: inline-block;
 }
 
-/* line 629, ../sass/styles.scss */
+/* line 636, ../sass/styles.scss */
 .reportingBar {
   display: inline-block;
   width: 70%;
 }
 
-/* line 634, ../sass/styles.scss */
+/* line 641, ../sass/styles.scss */
 .statistic, .statistic-free, .statistic-compare {
   color: #666;
   font-weight: 400;
 }
 
-/* line 638, ../sass/styles.scss */
+/* line 645, ../sass/styles.scss */
 .statistic-free {
   padding-right: 5px;
 }
 
-/* line 641, ../sass/styles.scss */
+/* line 648, ../sass/styles.scss */
 .compare {
   color: #666;
   margin: 0;
   cursor: pointer;
 }
 
-/* line 646, ../sass/styles.scss */
+/* line 653, ../sass/styles.scss */
 .compare:hover {
   color: #000;
   cursor: hand;
   text-decoration: underline;
 }
 
-/* line 651, ../sass/styles.scss */
+/* line 658, ../sass/styles.scss */
 #compare_1, #compare_2, #compare_title {
   margin-left: 10px;
 }
 
-/* line 654, ../sass/styles.scss */
+/* line 661, ../sass/styles.scss */
 #compare_1, #compare_2 {
   margin-bottom: 0;
 }
 
 /** Bootstrap 2 Progress Bar */
-/* line 659, ../sass/styles.scss */
+/* line 666, ../sass/styles.scss */
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -11345,7 +11350,7 @@ Span Styling
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 679, ../sass/styles.scss */
+/* line 686, ../sass/styles.scss */
 .progress .bar {
   float: left;
   width: 0;
@@ -11373,14 +11378,14 @@ Span Styling
   transition: width 0.6s ease;
 }
 
-/* line 706, ../sass/styles.scss */
+/* line 713, ../sass/styles.scss */
 .progress .bar + .bar {
   -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* line 712, ../sass/styles.scss */
+/* line 719, ../sass/styles.scss */
 .progress-striped .bar {
   background-color: #149bdf;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -11394,7 +11399,7 @@ Span Styling
   background-size: 40px 40px;
 }
 
-/* line 725, ../sass/styles.scss */
+/* line 732, ../sass/styles.scss */
 .progress.active .bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -moz-animation: progress-bar-stripes 2s linear infinite;
@@ -11403,7 +11408,7 @@ Span Styling
   animation: progress-bar-stripes 2s linear infinite;
 }
 
-/* line 734, ../sass/styles.scss */
+/* line 741, ../sass/styles.scss */
 .progress-danger .bar,
 .progress .bar-danger {
   background-color: #dd514c;
@@ -11416,7 +11421,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffc43c35', GradientType=0);
 }
 
-/* line 746, ../sass/styles.scss */
+/* line 753, ../sass/styles.scss */
 .progress-danger.progress-striped .bar,
 .progress-striped .bar-danger {
   background-color: #ee5f5b;
@@ -11427,7 +11432,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 756, ../sass/styles.scss */
+/* line 763, ../sass/styles.scss */
 .progress-success .bar,
 .progress .bar-success {
   background-color: #5eb95e;
@@ -11440,7 +11445,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
 }
 
-/* line 768, ../sass/styles.scss */
+/* line 775, ../sass/styles.scss */
 .progress-success.progress-striped .bar,
 .progress-striped .bar-success {
   background-color: #62c462;
@@ -11451,7 +11456,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 778, ../sass/styles.scss */
+/* line 785, ../sass/styles.scss */
 .progress-info .bar,
 .progress .bar-info {
   background-color: #4bb1cf;
@@ -11464,7 +11469,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
 }
 
-/* line 790, ../sass/styles.scss */
+/* line 797, ../sass/styles.scss */
 .progress-info.progress-striped .bar,
 .progress-striped .bar-info {
   background-color: #5bc0de;
@@ -11475,7 +11480,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 800, ../sass/styles.scss */
+/* line 807, ../sass/styles.scss */
 .progress-warning .bar,
 .progress .bar-warning {
   background-color: #faa732;
@@ -11488,7 +11493,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
 }
 
-/* line 812, ../sass/styles.scss */
+/* line 819, ../sass/styles.scss */
 .progress-warning.progress-striped .bar,
 .progress-striped .bar-warning {
   background-color: #fbb450;
@@ -11500,35 +11505,35 @@ Span Styling
 }
 
 /**Datatables Override*/
-/* line 822, ../sass/styles.scss */
+/* line 829, ../sass/styles.scss */
 .dataTables_filter {
   display: inline-block !important;
   vertical-align: top !important;
   float: right !important;
 }
 
-/* line 828, ../sass/styles.scss */
+/* line 835, ../sass/styles.scss */
 .dataTables_length {
   display: inline-block !important;
   vertical-align: top !important;
 }
 
-/* line 832, ../sass/styles.scss */
+/* line 839, ../sass/styles.scss */
 .dataTables_info {
   float: left !important;
 }
 
-/* line 835, ../sass/styles.scss */
+/* line 842, ../sass/styles.scss */
 .dataTables_paginate.paging_full_numbers {
   float: right !important;
 }
 
-/* line 838, ../sass/styles.scss */
+/* line 845, ../sass/styles.scss */
 .dataTables_paginate.paging_full_numbers a {
   margin-right: 2px;
 }
 
-/* line 844, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 a.paginate_button, a.paginate_active {
   margin-right: 2px;
 }

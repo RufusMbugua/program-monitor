@@ -31,7 +31,7 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/table-cloth/js/jquery.tablecloth.js" ></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/table-cloth/js/jquery.tablesorter.js" ></script>
 
- 
+ <link rel="shortcut icon"  href="<?php echo $this -> config ->item('project_url'); ?>/images/favicon.ico">
 
 <script>
 var substringMatcher = function(strs) {
