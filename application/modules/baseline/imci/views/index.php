@@ -19,27 +19,19 @@ echo $activity_table; ?>
 
         <div class="inner-mini">
 
-        <div class="stat">
-<div class="icon"><i class="fa fa-book"></i></div>
-<div><span class="text">Diarrhoea Guidelines Allocated</span>
-<span class="digit"><?php echo $Diarrhoea_guidelines_total; ?></span>
-</div>
-</div>
             <div class="stat">
-<div class="icon"><i class="fa fa-book"></i></div>
-<div><span class="text">IMCI Guidelines Allocated</span>
-<span class="digit"><?php echo $IMCI_guidelines_total; ?></span>
-</div>
-</div>
-
-
-
-<div class="stat">
-<div class="icon"><i class="fa fa-book"></i></div>
-<div><span class="text">ORT Guidelines Allocated</span>
-<span class="digit"><?php echo $ORT_guidelines_total; ?></span>
-</div>
-</div>
+<div class="icon"><i class="fa fa-user-md"></i></div>
+<div><span class="text">HCWs Trained</span><span class="digit"><?php
+echo $HCW_number ?></span></div></div>
+            <div class="stat"><div class="icon"><i class="fa fa-calendar"></i></div>
+            <div><span class="text">Latest HCW Training</span><span class="digit"><?php
+echo $latest_HCW_training ?></span></div></div>
+            <div class="stat"><div class="icon-alt"><i class="fa fa-user-md"></i></div>
+            <div><span class="text">TOTs Trained</span><span class="digit"><?php
+echo $TOT_number ?></span></div></div>
+            <div class="stat"><div class="icon-alt"><i class="fa fa-calendar"></i></div>
+            <div><span class="text">Latest TOT Training</span><span class="digit"><?php
+echo $latest_TOT_training ?></span></div></div>
         </div>
     </div>
     </div>
@@ -73,114 +65,99 @@ echo $activity_table; ?>
 
 </div>
 <div class="row">
-<div class="standard-graph">
+
+    <div class="standard-graph">
     <div class="outer">
-    <h3>IMCI Distribution by County <span id="limit"></span><i class="fa fa-expand full-screen" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress full-screen" data-placement="bottom" title="Click Here to Minimize"></i></h3>
-        <div class="inner max" id="distribution_county">
-        <div class="la-anim-1-mini"></div>
-        </div>
-        <div class="inner mini full-screen" id="distribution_county_fullscreen" style="display:none;width:40%">
-        <script>
-var map= new FusionMaps ("<?php echo base_url()?>assets/fusionmaps/Maps/FCMap_KenyaCounty.swf","KenyaMap","100%","100%","0","0");
-map.setJSONData(<?php
-echo $IMCI_policy_map_county; ?>
-    );
-    map.render("distribution_county_fullscreen");
-                    </script>
-        </div>
-        <div class="inner mini full-screen" id="" style="display:none;width:59%">
+    <h3>Policy/Guideline/Job Aids<i data-anim="la-anim-1" data-link="<?php echo base_url(); ?>guidelines_policy" class="fa fa-external-link run-anim" data-toggle="tooltip" data-placement="bottom" title="Click for More"></i><!--i class="fa fa-expand normal" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress normal" data-placement="bottom" title="Click Here to Minimize"></i--></h3>
+    <div class="inner max">
+            <div class="summary" id="imci_guidelines"><span class="text">IMCI Guidelines Distributed</span><span class="digit"><?php echo $IMCI_guidelines_total; ?></span></div>
+            <div class="summary" id="diarrhoea_guidelines"><span class="text">Diarrhoea Guidelines Distributed</span><span class="digit"><?php echo $Diarrhoea_guidelines_total; ?></span></div>
+            <div class="summary" id="ort_guidelines"><span class="text">ORT Guidelines Distributed</span><span class="digit"><?php echo $ORT_guidelines_total; ?></span></div>
 
-        <div class="stat">
-        <div class="icon"><i class="fa fa-map-marker"></i></div>
-            <div>
-                <span id="county_name_title" class="text">County Name :  </span>
-                <span id="county_name" class="digit">N/A</span>
-            </div>
-        </div>
 
-        <div class="stat">
-        <div class="icon"><i class="fa fa-hospital-o"></i></div>
-            <div>
-                <span id="facility_number_supplied" class="text">Total Facilities Supplied : </span>
-                <span id="facility_total_supplied" class="digit">0</span>
-            </div>
         </div>
-
-        <div class="stat">
-        <div class="icon"><i class="fa fa-hospital-o"></i></div>
-            <div>
-                <span id="facility_number_total" class="text">Total Facilities Existing : </span>
-                <span id="facility_total_total" class="digit">0</span>
-            </div>
-        </div>
-        </div>
-        </div>
+        <div class="inner mini" style="display:none"></div>
+    </div>
 
     </div>
 
     <div class="standard-graph">
     <div class="outer">
-    <h3>IMCI Distribution by Ownership<i class="fa fa-expand full-screen" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress full-screen" data-placement="bottom" title="Click Here to Minimize"></i></h3>
-
-        <div class="inner max" id="distribution_source">
-        <div class="la-anim-1-mini"></div>
-        </div>
-        <div class="inner mini full-screen" id="distribution_source_fullscreen" style="display:none;width:40%">
-        <script>
-var map= new FusionMaps ("<?php echo base_url()?>assets/fusionmaps/Maps/FCMap_KenyaCounty.swf","KenyaMap2","100%","100%","0","0");
-map.setJSONData(<?php
-echo $IMCI_policy_map_source; ?>
-    );
-    map.render("distribution_source_fullscreen");
-                    </script>
-        </div>
-        <div class="inner mini full-screen" id="" style="display:none;width:59%">
-
-        <div class="stat">
-        <div class="icon"><i class="fa fa-map-marker"></i></div>
-            <div>
-                <span id="county_name_title" class="text">County Name :  </span>
-                <span id="county_name_2" class="digit">N/A</span>
-            </div>
-        </div>
-
-        <div class="stat">
-        <div class="icon"><i class="fa fa-hospital-o"></i></div>
-            <div>
-                <span id="facility_number_supplied" class="text">Total Guidelines Supplied : </span>
-                <span id="facility_total_supplied_total" class="digit">0</span>
-            </div>
-        </div>
-
-          <div class="stat">
-        <div class="icon"><i class="fa fa-briefcase"></i></div>
-            <div>
-                <span id="facility_number_supplied" class="text">MOH : </span>
-                <span id="facility_total_supplied_moh" class="digit">0</span>
-            </div>
-        </div>
-
-          <div class="stat">
-        <div class="icon"><i class="fa f fa-briefcase"></i></div>
-            <div>
-                <span id="facility_number_supplied" class="text">FBO : </span>
-                <span id="facility_total_supplied_fbo" class="digit">0</span>
-            </div>
-        </div>
-
-          <div class="stat">
-        <div class="icon"><i class="fa  fa-briefcase"></i></div>
-            <div>
-                <span id="facility_number_supplied" class="text">PRIVATE : </span>
-                <span id="facility_total_supplied_private" class="digit">0</span>
-            </div>
-        </div>
+    <h3>Orientation<i class="fa fa-expand normal" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress normal" data-placement="bottom" title="Click Here to Minimize"></i></h3>
+    <div class="inner max">
+        <div class="summary"><span class="text">Targeted sites</span><span class="digit"></span></div>
+            <div class="summary"><span class="text">Oriented sites</span><span class="digit"></span></div>
+            <div class="summary"><span class="text">Public</span><span class="digit"></span></div>
+            <div class="summary"><span class="text">Private</span><span class="digit"></span></div>
 
 
         </div>
+
+        <div class="inner mini" style="display:none"></div>
+    </div>
+
+    </div>
+    <div class="standard-graph">
+
+    <div class="outer">
+    <h3>HCW Training <i class="fa fa-expand normal" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress normal" data-placement="bottom" title="Click Here to Minimize"></i><i class="fa fa-bar-chart-o" style="display:none" data-placement="bottom" title="Click Here for Graphs"></i><i class="fa fa-table" style="display:none" data-placement="bottom" title="Click Here for Tables"></i></h3>
+        <div class="inner max">
+            <?php echo $HCW_mini; ?>
+        </div>
+        <div class="inner mini" style="display:none">
+            <?php echo $HCW_progress; ?>
         </div>
 
+        <div class="inner mini table" style="display:none">
+            <?php echo $HCW_table; ?>
         </div>
+
+        <div class="inner mini" style="display:none">
+            <?php echo $HCW_Facility_progress; ?>
+        </div>
+        <div class="inner mini table" style="display:none">
+            <?php echo $HCW_Facility_table; ?>
+        </div>
+
+        <div class="inner mini-graph-2" id="training_cadre" style="display:none">
+
+        </div>
+        <div class="inner mini-graph" id="training_frequency" style="display:none">
+
+        </div>
+
+        <div class="inner mini-graph" id="training_coverage" style="display:none">
+
+        </div>
+
+
+
+    </div>
+
+    </div>
+        <div class="standard-graph">
+
+    <div class="outer">
+    <h3>TOT Training <i class="fa fa-expand normal" data-toggle="tooltip" data-placement="bottom" title="Click Here for More"></i><i style="display:none" class="fa fa-compress normal" data-placement="bottom" title="Click Here to Minimize"></i><i class="fa fa-bar-chart-o" style="display:none" data-placement="bottom" title="Click Here for Graphs"></i><i class="fa fa-table" style="display:none" data-placement="bottom" title="Click Here for Tables"></i></h3>
+        <div class="inner max">
+            <?php echo $TOT_mini; ?>
+        </div>
+        <div class="inner mini" style="display:none">
+            <?php echo $TOT_progress; ?>
+        </div>
+
+        <div class="inner mini" style="display:none">
+            <?php echo $TOT_table; ?>
+        </div>
+
+        <div class="inner mini" style="display:none">
+            <?php echo $TOT_Facility_progress; ?>
+        </div>
+        <div class="inner mini" style="display:none">
+            <?php echo $TOT_Facility_table; ?>
+        </div>
+
+    </div>
 
     </div>
 
@@ -188,8 +165,7 @@ echo $IMCI_policy_map_source; ?>
 </div>
 <div class="search" style="left:-100%">
 
-<?php
-echo Modules::run('search/search/index'); ?>
+<?php echo Modules::run('search/search/index'); ?>
 </div>
 <div class="side-nav">
 
@@ -205,7 +181,7 @@ echo Modules::run('search/search/index'); ?>
 
     </div>
 
-<div class="modal fade" id="guidelines_policy_upload_activity" >
+<div class="modal fade" id="imci_upload_activity" >
     <div class="modal-dialog">
 
         <div class="modal-content">
@@ -218,12 +194,12 @@ echo Modules::run('search/search/index'); ?>
             </div>
             <div class="modal-body" id="upload_form_here">
                 <script>
-                $('#upload_form_here').load('guidelines_policy/showUpload');
+                $('#upload_form_here').load('imci/showUpload');
                 </script>
 
             </div>
             <div class="modal-footer" style="height:45px">
-                <button id="guidelines_policy_uploadActivityBtn" type="submit" class="btn btn-primary">
+                <button id="imci_uploadActivityBtn" type="submit" class="btn btn-primary">
                     <i class="fa fa-plus"></i>Upload
                 </button>
                 <button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -234,7 +210,7 @@ echo Modules::run('search/search/index'); ?>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<div class="modal fade" id="guidelines_policy_files_modal" >
+<div class="modal fade" id="imci_files_modal" >
     <div class="modal-dialog" style="width:98%">
 
         <div class="modal-content">
@@ -246,9 +222,9 @@ echo Modules::run('search/search/index'); ?>
                 </button>
                 <h4 class="modal-title">View Source Data (<div style="display:inline-block;font-weight:bold" id="activity_name"></div>)
                     <a id="export_csv" class="btn" style="margin-top:-5px" data-link="<?php
-echo base_url(); ?>guidelines_policy/export_Excel/"><i class="fi-page-export-csv"></i>Export to Excel</a>
+echo base_url(); ?>imci/export_Excel/"><i class="fi-page-export-csv"></i>Export to Excel</a>
                     <a id="export_pdf" class="btn" style="margin-top:-5px" data-link="<?php
-echo base_url(); ?>guidelines_policy/export_PDF/"><i class="fi-page-export-pdf"></i>Export to PDF</a>
+echo base_url(); ?>imci/export_PDF/"><i class="fi-page-export-pdf"></i>Export to PDF</a>
                 </h4>
             </div>
             <div class="modal-body" style=" height:60%;overflow-y:scroll" id="source_data">
@@ -265,13 +241,13 @@ echo base_url(); ?>guidelines_policy/export_PDF/"><i class="fi-page-export-pdf">
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <!-- Add Event modal -->
-<div class="modal fade" id="guidelines_policy_manual_update" >
+<div class="modal fade" id="imci_manual_update" >
     <div class="modal-dialog" style="width:95%" >
 
         <div class="modal-content">
             <?php
 $formAttr = array('id' => 'manual_entry_form');
-echo form_open('guidelines_policy/manual_entry', $formAttr); ?>
+echo form_open('imci/manual_entry', $formAttr); ?>
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
@@ -358,38 +334,18 @@ echo form_close(); ?>
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <script>
-        var base_url = '<?php echo base_url(); ?>';
-        $(document).ready(pageHandler(base_url,'guidelines_policy'));
+        var base_url = '<?php echo base_url();?>';
+        $(document).ready(pageHandler(base_url,'imci'));
+        $('#policy_link').click(function(){
+            window.open(base_url+'guidelines_policy',"_parent");
+});
+     $('.fa-bar-chart-o').click(function() {
+        var activity_name = 'Train an expanded pool of HCWs';
+        activity_name = encodeURIComponent(activity_name);
 
-        $(document).ready(function(){
- 		var function_url_array = ['guidelines_policy/distribution/region/county/10','guidelines_policy/distribution/source/source/all'];
-        var container_array = ['distribution_county','distribution_source'];
+        var function_url_array = ['imci/imci_frequency/' + activity_name, 'imci/imci_training_county', 'imci/imci_cadre'];
+        var container_array = ['training_frequency', 'training_coverage', 'training_cadre'];
         loadGraphSection(base_url, function_url_array, container_array);
-
-        });
-
-        function runPolicyMap(data){
-    newData=data.split(',')
-     $('#county_name').text(newData[0]);
-    $('#facility_total_total').text(newData[1]);
-    $('#facility_total_supplied').text(newData[2]);
-}
-
-    function runPolicyMapSource(data){
-        total_allocation=0;
-    newData=$.parseJSON(data);
-    $('#facility_total_supplied_moh').text(0);
-    	$('#facility_total_supplied_fbo').text(0);
-    		$('#facility_total_supplied_private').text(0);
-
-   $.each(newData, function( k, v ){
-    	$('#facility_total_supplied_'+v['policy_source'].toLowerCase()).text(v['allocations']);
-    	$('#county_name_2').text(v['county']);
-    	total_allocation+=parseInt(v['allocations']);
- 	});
-
-$('#facility_total_supplied_total').text(total_allocation);
-
- }
+    });
 
 </script>

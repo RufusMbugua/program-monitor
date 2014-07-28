@@ -1,6 +1,6 @@
 <?php
 (defined('BASEPATH')) OR exit('No direct script access allowed');
-//error_reporting(1);
+error_reporting(1);
 /* The MX_Controller class is autoloaded as required */
 
 class MY_Controller extends MX_Controller
@@ -11,12 +11,12 @@ class MY_Controller extends MX_Controller
         date_default_timezone_set('Africa/Nairobi');
         $this->load->model('global_model');
         $this->getSubPrograms();
-        
+
         //$this -> getActivity_Table();
-        
-        
+
+
     }
-    
+
     /**
      * [getSubPrograms description]
      * @return [type]
@@ -29,15 +29,15 @@ class MY_Controller extends MX_Controller
         }
         $this->sub_program_list = $links;
         return $this->sub_program_list;
-        
+
         //var_dump($results);
-        
-        
+
+
     }
-    
+
     public function getActivity_Table($subprogram) {
     }
-    
+
     /**
      * [facility_list description]
      * @return [type]
@@ -46,14 +46,14 @@ class MY_Controller extends MX_Controller
         $facility = $this->db->get('facility');
         $facility = $facility->result_array();
         $option = '<option value="0" selected="selected">Please Select Facility</option>';
-        
+
         foreach ($facility as $fac) {
             $option.= '<option value="' . $fac['facilityMFC'] . '">' . $fac['facilityName'] . '</option>';
         }
-        
+
         return $option;
     }
-    
+
     /**
      * [department_list description]
      * @return [type]
@@ -62,14 +62,14 @@ class MY_Controller extends MX_Controller
         $facility = $this->db->get('departments');
         $facility = $facility->result_array();
         $option = '<option value="n/a" selected="selected">Please Select Department</option>';
-        
+
         foreach ($facility as $fac) {
             $option.= '<option value="' . $fac['department_id'] . '">' . $fac['department_name'] . '</option>';
         }
-        
+
         return $option;
     }
-    
+
     /**
      * [cadre_list description]
      * @return [type]
@@ -78,14 +78,14 @@ class MY_Controller extends MX_Controller
         $facility = $this->db->get('cadre');
         $facility = $facility->result_array();
         $option = '<option value="n/a" selected="selected">Please Select Job Title</option>';
-        
+
         foreach ($facility as $fac) {
             $option.= '<option value="' . $fac['cadre_id'] . '">' . $fac['cadre_name'] . '</option>';
         }
-        
+
         return $option;
     }
-    
+
     /**
      * IMCI Training Functions
      */
@@ -93,7 +93,7 @@ class MY_Controller extends MX_Controller
         $training_data = $this->global_model->getTrainingData($columns, $group_order, $training);
         return $training_data;
     }
-    
+
     /**
      * [total description]
      * @param  [type] $activity
@@ -105,7 +105,7 @@ class MY_Controller extends MX_Controller
         $tot = $this->db->count_all_results();
         return $tot;
     }
-    
+
     /**
      * [latest_training description]
      * @param  [type] $activity
@@ -116,11 +116,11 @@ class MY_Controller extends MX_Controller
         $result = $this->db->get_where('subprogramlog', array('activity_id' => $activity));
         $result = $result->result_array();
         $latest_training = date('d-M-Y', $result[0]['dates']);
-        
+
         $latest_training = ($latest_training == '01-Jan-1970' ? 'N/A' : $latest_training);
         return $latest_training;
     }
-    
+
     /**
      * [total_facilities_trained description]
      * @param  [type] $activity_id
@@ -132,7 +132,7 @@ class MY_Controller extends MX_Controller
         $result = $result->result_array();
         return $result[0]['total'];
     }
-    
+
     /**
      * [specific_facilities_trained description]
      * @param  [type] $county
@@ -140,7 +140,7 @@ class MY_Controller extends MX_Controller
      * @return [type]
      */
     public function specific_facilities_trained($county, $activity_id) {
-        $query = 'select 
+        $query = 'select
     count(distinct mfl_code) as total
 FROM
     subprogramlog
@@ -151,7 +151,7 @@ FROM
         $result = $result->result_array();
         return $result[0]['total'];
     }
-    
+
     /**
      * [region_trained description]
      * @param  [type] $county
@@ -159,7 +159,7 @@ FROM
      * @return [type]
      */
     public function region_trained($county, $activity_id) {
-        $query = 'select 
+        $query = 'select
     count(mfl_code) as total
 FROM
     subprogramlog
@@ -170,7 +170,7 @@ FROM
         $result = $result->result_array();
         return $result[0]['total'];
     }
-    
+
     /**
      * [facility_type_trained description]
      * @param  [type] $county
@@ -190,7 +190,7 @@ FROM
                 $distinct = 'distinct';
                 break;
         }
-        $query = 'select 
+        $query = 'select
     count(' . $distinct . ' facility.facilityMFC) as total,(CASE
                 WHEN facilityOwnedBy = "Private Practice - General Practitioner" THEN "Private"
                 WHEN facilityOwnedBy = "Private Practice - Nurse / Midwife" THEN "Private"
