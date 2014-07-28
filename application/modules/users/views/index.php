@@ -1,52 +1,27 @@
 <div class="row">
+    <div id="login-info">
 
-	<div class="standard-graph">
-	<div class="outer">
-	<h3>Most Unavailable Equipment</h3>
-	<div class="inner">
-			
-			<div id="unavailability_rank">
-				<div class="la-anim-1-mini"></div>
-			</div>
-		</div>
-	</div>
-		
-	</div>
+    </div>
+    <?php
+$formArray = array('id' => 'login');
+echo form_open('users/login', $formArray);
+    ?>
+    <h2>Sign In to Program Monitor</h2>
+    <?php
 
-	<div class="standard-graph">
-	<div class="outer">
-	<h3>CH Reporting Rate</h3>
-	<div class="inner scrollable">
-			
-			<div class="reporting" id="ch_reporting">
-				<div class="la-anim-1-mini"></div>
-			</div>
-		</div>
-	</div>
-		
-	</div>
-	<div class="standard-graph">
-	<div class="outer">
-	<h3>MNH Reporting Rate</h3>
-	<div class="inner">
-			
-			
-			<div class="reporting" id="mnh_reporting">
-				<div class="la-anim-1-mini"></div>
-			</div>
-		</div>
-	</div>
-		
-	</div>
+echo form_error('username');
+echo form_label('Username','username');
+$data = array('name' => 'username', 'value'=>set_value('username'), 'id' => 'username', 'placeholder' => 'John Doe', 'maxlength' => '100');
+echo form_input($data);
 
+echo form_error('password');
+echo form_label('Password','password');
+$data = array('name' => 'password', 'value'=>set_value('password'), 'id' => 'password', 'placeholder' => 'password', 'maxlength' => '100');
+echo form_password($data);
+
+$data = array('name' => 'login', 'id' => 'login', 'type' => 'submit', 'content' => '<i class="fa fa-sign-in"></i>Login');
+echo form_button($data);
+
+echo form_close(); ?>
 </div>
 
-
-
-<script>
-	$(document).ready(function(){
-		$('#unavailability_rank').load('<?php echo base_url();?>baseline/unavailable_equipment_rank');
-		$('#ch_reporting').load('<?php echo $this -> config -> item('project_url');?>/c_analytics/getAllReportedCounties/ch');
-		$('#mnh_reporting').load('<?php echo $this -> config -> item('project_url');?>/c_analytics/getAllReportedCounties/mnh');
-	});
-</script>

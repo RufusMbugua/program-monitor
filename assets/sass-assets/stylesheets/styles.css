@@ -364,8 +364,9 @@ th {
   }
 
   /* line 83, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret, .dataTables_paginate.paging_full_numbers a > .caret, a.paginate_button > .caret, a.paginate_active > .caret,
+  .btn > .caret, #login button > .caret, .dataTables_paginate.paging_full_numbers a > .caret, a.paginate_button > .caret, a.paginate_active > .caret,
   .dropup > .btn > .caret,
+  #login .dropup > button > .caret,
   .dataTables_paginate.paging_full_numbers .dropup > a > .caret,
   .dropup > a.paginate_button > .caret,
   .dropup > a.paginate_active > .caret {
@@ -2096,7 +2097,7 @@ pre code {
 }
 
 /* line 14, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .guide, .standard-graph, .standard-graph-lg, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #search-bar, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .large-graph, .map, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .activities, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .x-large-graph, .search-section, .xx-large-graph, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .guide, .standard-graph, .standard-graph-lg, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #search-bar, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, #login-info, #login, .large-graph, .map, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .activities, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .x-large-graph, .search-section, .xx-large-graph, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2626,7 +2627,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 33, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .guide, .standard-graph, .standard-graph-lg, .col-md-4, #search-bar, .col-md-5, .col-md-6, .large-graph, .map, .col-md-7, .col-md-8, .col-md-9, .activities, .col-md-10, .col-md-11, .col-md-12, .x-large-graph, .search-section, .xx-large-graph {
+  .col-md-1, .col-md-2, .col-md-3, .guide, .standard-graph, .standard-graph-lg, .col-md-4, #search-bar, .col-md-5, .col-md-6, #login-info, #login, .large-graph, .map, .col-md-7, .col-md-8, .col-md-9, .activities, .col-md-10, .col-md-11, .col-md-12, .x-large-graph, .search-section, .xx-large-graph {
     float: left;
   }
 
@@ -2656,7 +2657,7 @@ pre code {
   }
 
   /* line 41, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6, .large-graph, .map {
+  .col-md-6, #login-info, #login, .large-graph, .map {
     width: 50%;
   }
 
@@ -3519,7 +3520,7 @@ output {
 }
 
 /* line 115, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control {
+.form-control, #login input {
   display: block;
   width: 100%;
   height: 34px;
@@ -3538,27 +3539,27 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 /* line 53, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.form-control:focus {
+.form-control:focus, #login input:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 /* line 102, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, #login input::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
 /* line 104, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, #login input:-ms-input-placeholder {
   color: #999999;
 }
 /* line 105, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, #login input::-webkit-input-placeholder {
   color: #999999;
 }
 /* line 143, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+.form-control[disabled], #login input[disabled], .form-control[readonly], #login input[readonly], fieldset[disabled] .form-control, fieldset[disabled] #login input, #login fieldset[disabled] input {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
@@ -3583,37 +3584,43 @@ input[type="month"] {
   line-height: 1.428571429 \0;
 }
 /* line 184, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
+input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, #login .input-group-sm > input[type="date"],
 .input-group-sm > input[type="date"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="date"].btn,
 input[type="time"].input-sm,
 .input-group-sm > input[type="time"].form-control,
+#login .input-group-sm > input[type="time"],
 .input-group-sm > input[type="time"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="time"].btn,
 input[type="datetime-local"].input-sm,
 .input-group-sm > input[type="datetime-local"].form-control,
+#login .input-group-sm > input[type="datetime-local"],
 .input-group-sm > input[type="datetime-local"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
 input[type="month"].input-sm,
 .input-group-sm > input[type="month"].form-control,
+#login .input-group-sm > input[type="month"],
 .input-group-sm > input[type="month"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="month"].btn {
   line-height: 30px;
 }
 /* line 187, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
+input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, #login .input-group-lg > input[type="date"],
 .input-group-lg > input[type="date"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="date"].btn,
 input[type="time"].input-lg,
 .input-group-lg > input[type="time"].form-control,
+#login .input-group-lg > input[type="time"],
 .input-group-lg > input[type="time"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="time"].btn,
 input[type="datetime-local"].input-lg,
 .input-group-lg > input[type="datetime-local"].form-control,
+#login .input-group-lg > input[type="datetime-local"],
 .input-group-lg > input[type="datetime-local"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
 input[type="month"].input-lg,
 .input-group-lg > input[type="month"].form-control,
+#login .input-group-lg > input[type="month"],
 .input-group-lg > input[type="month"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="month"].btn {
   line-height: 46px;
@@ -3690,9 +3697,10 @@ input[type="checkbox"],
 }
 
 /* line 67, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.input-sm, .input-group-sm > .form-control,
+.input-sm, .input-group-sm > .form-control, #login .input-group-sm > input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
+#login .input-group-sm > .input-group-btn > button,
 .dataTables_paginate.paging_full_numbers .input-group-sm > .input-group-btn > a,
 .input-group-sm > .input-group-btn > a.paginate_button,
 .input-group-sm > .input-group-btn > a.paginate_active {
@@ -3723,9 +3731,10 @@ select[multiple].input-sm,
 }
 
 /* line 67, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.input-lg, .input-group-lg > .form-control,
+.input-lg, .input-group-lg > .form-control, #login .input-group-lg > input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
+#login .input-group-lg > .input-group-btn > button,
 .dataTables_paginate.paging_full_numbers .input-group-lg > .input-group-btn > a,
 .input-group-lg > .input-group-btn > a.paginate_button,
 .input-group-lg > .input-group-btn > a.paginate_active {
@@ -3760,7 +3769,7 @@ select[multiple].input-lg,
   position: relative;
 }
 /* line 284, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.has-feedback .form-control {
+.has-feedback .form-control, .has-feedback #login input, #login .has-feedback input {
   padding-right: 42.5px;
 }
 
@@ -3778,9 +3787,10 @@ select[multiple].input-lg,
 }
 
 /* line 300, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, #login .input-group-lg > input + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+#login .input-group-lg > .input-group-btn > button + .form-control-feedback,
 .dataTables_paginate.paging_full_numbers .input-group-lg > .input-group-btn > a + .form-control-feedback,
 .input-group-lg > .input-group-btn > a.paginate_button + .form-control-feedback,
 .input-group-lg > .input-group-btn > a.paginate_active + .form-control-feedback {
@@ -3790,9 +3800,10 @@ select[multiple].input-lg,
 }
 
 /* line 305, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, #login .input-group-sm > input + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+#login .input-group-sm > .input-group-btn > button + .form-control-feedback,
 .dataTables_paginate.paging_full_numbers .input-group-sm > .input-group-btn > a + .form-control-feedback,
 .input-group-sm > .input-group-btn > a.paginate_button + .form-control-feedback,
 .input-group-sm > .input-group-btn > a.paginate_active + .form-control-feedback {
@@ -3811,13 +3822,13 @@ select[multiple].input-lg,
   color: #3c763d;
 }
 /* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .form-control {
+.has-success .form-control, .has-success #login input, #login .has-success input {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .form-control:focus {
+.has-success .form-control:focus, .has-success #login input:focus, #login .has-success input:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -3843,13 +3854,13 @@ select[multiple].input-lg,
   color: #8a6d3b;
 }
 /* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .form-control {
+.has-warning .form-control, .has-warning #login input, #login .has-warning input {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .form-control:focus {
+.has-warning .form-control:focus, .has-warning #login input:focus, #login .has-warning input:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -3875,13 +3886,13 @@ select[multiple].input-lg,
   color: #a94442;
 }
 /* line 17, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control {
+.has-error .form-control, .has-error #login input, #login .has-error input {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control:focus {
+.has-error .form-control:focus, .has-error #login input:focus, #login .has-error input:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
@@ -3912,43 +3923,52 @@ select[multiple].input-lg,
 
 @media (min-width: 768px) {
   /* line 363, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .form-group, .navbar-form .form-group {
+  .form-inline .form-group, .navbar-form .form-group, #navbar-right .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
   /* line 370, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .form-control, .navbar-form .form-control {
+  .form-inline .form-control, .navbar-form .form-control, #navbar-right .form-control, .form-inline #login input, #login .form-inline input, .navbar-form #login input, #login .navbar-form input, #navbar-right #login input, #login #navbar-right input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
   /* line 376, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group, .navbar-form .input-group {
+  .form-inline .input-group, .navbar-form .input-group, #navbar-right .input-group {
     display: inline-table;
     vertical-align: middle;
   }
   /* line 382, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon,
+  .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon, #navbar-right .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
   .navbar-form .input-group .input-group-btn,
+  #navbar-right .input-group .input-group-btn,
   .form-inline .input-group .form-control,
-  .navbar-form .input-group .form-control {
+  .navbar-form .input-group .form-control,
+  #navbar-right .input-group .form-control,
+  .form-inline .input-group #login input,
+  #login .form-inline .input-group input,
+  .navbar-form .input-group #login input,
+  #login .navbar-form .input-group input,
+  #navbar-right .input-group #login input,
+  #login #navbar-right .input-group input {
     width: auto;
   }
   /* line 388, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, #navbar-right .input-group > .form-control, .form-inline #login .input-group > input, #login .form-inline .input-group > input, .navbar-form #login .input-group > input, #login .navbar-form .input-group > input, #navbar-right #login .input-group > input, #login #navbar-right .input-group > input {
     width: 100%;
   }
   /* line 392, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .control-label, .navbar-form .control-label {
+  .form-inline .control-label, .navbar-form .control-label, #navbar-right .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
   /* line 401, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .radio, .navbar-form .radio,
+  .form-inline .radio, .navbar-form .radio, #navbar-right .radio,
   .form-inline .checkbox,
-  .navbar-form .checkbox {
+  .navbar-form .checkbox,
+  #navbar-right .checkbox {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
@@ -3956,14 +3976,15 @@ select[multiple].input-lg,
     vertical-align: middle;
   }
   /* line 409, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"],
+  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"], #navbar-right .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"],
-  .navbar-form .checkbox input[type="checkbox"] {
+  .navbar-form .checkbox input[type="checkbox"],
+  #navbar-right .checkbox input[type="checkbox"] {
     float: none;
     margin-left: 0;
   }
   /* line 418, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback, #navbar-right .has-feedback .form-control-feedback {
     top: 0;
   }
 }
@@ -4016,7 +4037,7 @@ select[multiple].input-lg,
 }
 
 /* line 9, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
+.btn, #login button, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -4036,25 +4057,25 @@ select[multiple].input-lg,
   user-select: none;
 }
 /* line 25, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:focus, .dataTables_paginate.paging_full_numbers a:focus, a.paginate_button:focus, a.paginate_active:focus, .btn:active:focus, .dataTables_paginate.paging_full_numbers a:active:focus, a.paginate_button:active:focus, a.paginate_active:active:focus, .btn.active:focus, .dataTables_paginate.paging_full_numbers a.active:focus, a.active.paginate_button:focus, a.active.paginate_active:focus {
+.btn:focus, #login button:focus, .dataTables_paginate.paging_full_numbers a:focus, a.paginate_button:focus, a.paginate_active:focus, .btn:active:focus, #login button:active:focus, .dataTables_paginate.paging_full_numbers a:active:focus, a.paginate_button:active:focus, a.paginate_active:active:focus, .btn.active:focus, #login button.active:focus, .dataTables_paginate.paging_full_numbers a.active:focus, a.active.paginate_button:focus, a.active.paginate_active:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 31, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:hover, .dataTables_paginate.paging_full_numbers a:hover, a.paginate_button:hover, a.paginate_active:hover, .btn:focus, .dataTables_paginate.paging_full_numbers a:focus, a.paginate_button:focus, a.paginate_active:focus {
+.btn:hover, #login button:hover, .dataTables_paginate.paging_full_numbers a:hover, a.paginate_button:hover, a.paginate_active:hover, .btn:focus, #login button:focus, .dataTables_paginate.paging_full_numbers a:focus, a.paginate_button:focus, a.paginate_active:focus {
   color: #333333;
   text-decoration: none;
 }
 /* line 37, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:active, .dataTables_paginate.paging_full_numbers a:active, a.paginate_button:active, a.paginate_active:active, .btn.active, .dataTables_paginate.paging_full_numbers a.active, a.active.paginate_button, a.active.paginate_active {
+.btn:active, #login button:active, .dataTables_paginate.paging_full_numbers a:active, a.paginate_button:active, a.paginate_active:active, .btn.active, #login button.active, .dataTables_paginate.paging_full_numbers a.active, a.active.paginate_button, a.active.paginate_active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 /* line 45, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.disabled, .dataTables_paginate.paging_full_numbers a.disabled, a.disabled.paginate_button, a.disabled.paginate_active, .btn[disabled], .dataTables_paginate.paging_full_numbers a[disabled], a[disabled].paginate_button, a[disabled].paginate_active, fieldset[disabled] .btn, fieldset[disabled] .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers fieldset[disabled] a, fieldset[disabled] a.paginate_button, fieldset[disabled] a.paginate_active {
+.btn.disabled, #login button.disabled, .dataTables_paginate.paging_full_numbers a.disabled, a.disabled.paginate_button, a.disabled.paginate_active, .btn[disabled], #login button[disabled], .dataTables_paginate.paging_full_numbers a[disabled], a[disabled].paginate_button, a[disabled].paginate_active, fieldset[disabled] .btn, fieldset[disabled] #login button, #login fieldset[disabled] button, fieldset[disabled] .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers fieldset[disabled] a, fieldset[disabled] a.paginate_button, fieldset[disabled] a.paginate_active {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -4091,28 +4112,28 @@ select[multiple].input-lg,
 }
 
 /* line 60, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-primary {
+.btn-primary, #login button {
   color: white;
   background-color: #428bca;
   border-color: #357ebd;
 }
 /* line 15, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+.btn-primary:hover, #login button:hover, .btn-primary:focus, #login button:focus, .btn-primary:active, #login button:active, .btn-primary.active, #login button.active, .open > .btn-primary.dropdown-toggle, #login .open > button.dropdown-toggle {
   color: white;
   background-color: #3071a9;
   border-color: #285e8e;
 }
 /* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+.btn-primary:active, #login button:active, .btn-primary.active, #login button.active, .open > .btn-primary.dropdown-toggle, #login .open > button.dropdown-toggle {
   background-image: none;
 }
 /* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+.btn-primary.disabled, #login button.disabled, .btn-primary.disabled:hover, #login button.disabled:hover, .btn-primary.disabled:focus, #login button.disabled:focus, .btn-primary.disabled:active, #login button.disabled:active, .btn-primary.disabled.active, #login button.disabled.active, .btn-primary[disabled], #login button[disabled], .btn-primary[disabled]:hover, #login button[disabled]:hover, .btn-primary[disabled]:focus, #login button[disabled]:focus, .btn-primary[disabled]:active, #login button[disabled]:active, .btn-primary[disabled].active, #login button[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] #login button, #login fieldset[disabled] button, fieldset[disabled] .btn-primary:hover, fieldset[disabled] #login button:hover, #login fieldset[disabled] button:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] #login button:focus, #login fieldset[disabled] button:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] #login button:active, #login fieldset[disabled] button:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] #login button.active, #login fieldset[disabled] button.active {
   background-color: #428bca;
   border-color: #357ebd;
 }
 /* line 38, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary .badge {
+.btn-primary .badge, #login button .badge {
   color: #428bca;
   background-color: white;
 }
@@ -4255,7 +4276,7 @@ select[multiple].input-lg,
 }
 
 /* line 124, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn, .dataTables_paginate.paging_full_numbers .btn-group-lg > a, .btn-group-lg > a.paginate_button, .btn-group-lg > a.paginate_active {
+.btn-lg, .btn-group-lg > .btn, #login .btn-group-lg > button, .dataTables_paginate.paging_full_numbers .btn-group-lg > a, .btn-group-lg > a.paginate_button, .btn-group-lg > a.paginate_active {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -4263,7 +4284,7 @@ select[multiple].input-lg,
 }
 
 /* line 128, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn, .dataTables_paginate.paging_full_numbers .btn-group-sm > a, .btn-group-sm > a.paginate_button, .btn-group-sm > a.paginate_active {
+.btn-sm, .btn-group-sm > .btn, #login .btn-group-sm > button, .dataTables_paginate.paging_full_numbers .btn-group-sm > a, .btn-group-sm > a.paginate_button, .btn-group-sm > a.paginate_active {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -4271,7 +4292,7 @@ select[multiple].input-lg,
 }
 
 /* line 132, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > a.paginate_button, .btn-group-xs > a.paginate_active, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
+.btn-xs, .btn-group-xs > .btn, #login .btn-group-xs > button, .btn-group-xs > a.paginate_button, .btn-group-xs > a.paginate_active, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -4498,12 +4519,12 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   /* line 204, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
-  .navbar-right .dropdown-menu {
+  .navbar-right .dropdown-menu, #navbar-right .dropdown-menu {
     right: 0;
     left: auto;
   }
   /* line 209, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
-  .navbar-right .dropdown-menu-left {
+  .navbar-right .dropdown-menu-left, #navbar-right .dropdown-menu-left {
     left: 0;
     right: auto;
   }
@@ -4516,8 +4537,9 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn, .dataTables_paginate.paging_full_numbers .btn-group > a, .btn-group > a.paginate_button, .btn-group > a.paginate_active,
+.btn-group > .btn, #login .btn-group > button, .dataTables_paginate.paging_full_numbers .btn-group > a, .btn-group > a.paginate_button, .btn-group > a.paginate_active,
 .btn-group-vertical > .btn,
+#login .btn-group-vertical > button,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a,
 .btn-group-vertical > a.paginate_button,
 .btn-group-vertical > a.paginate_active {
@@ -4525,28 +4547,33 @@ tbody.collapse.in {
   float: left;
 }
 /* line 18, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .dataTables_paginate.paging_full_numbers .btn-group > a:hover, .btn-group > a.paginate_button:hover, .btn-group > a.paginate_active:hover, .btn-group > .btn:focus, .dataTables_paginate.paging_full_numbers .btn-group > a:focus, .btn-group > a.paginate_button:focus, .btn-group > a.paginate_active:focus, .btn-group > .btn:active, .dataTables_paginate.paging_full_numbers .btn-group > a:active, .btn-group > a.paginate_button:active, .btn-group > a.paginate_active:active, .btn-group > .btn.active, .dataTables_paginate.paging_full_numbers .btn-group > a.active, .btn-group > a.active.paginate_button, .btn-group > a.active.paginate_active,
+.btn-group > .btn:hover, #login .btn-group > button:hover, .dataTables_paginate.paging_full_numbers .btn-group > a:hover, .btn-group > a.paginate_button:hover, .btn-group > a.paginate_active:hover, .btn-group > .btn:focus, #login .btn-group > button:focus, .dataTables_paginate.paging_full_numbers .btn-group > a:focus, .btn-group > a.paginate_button:focus, .btn-group > a.paginate_active:focus, .btn-group > .btn:active, #login .btn-group > button:active, .dataTables_paginate.paging_full_numbers .btn-group > a:active, .btn-group > a.paginate_button:active, .btn-group > a.paginate_active:active, .btn-group > .btn.active, #login .btn-group > button.active, .dataTables_paginate.paging_full_numbers .btn-group > a.active, .btn-group > a.active.paginate_button, .btn-group > a.active.paginate_active,
 .btn-group-vertical > .btn:hover,
+#login .btn-group-vertical > button:hover,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:hover,
 .btn-group-vertical > a.paginate_button:hover,
 .btn-group-vertical > a.paginate_active:hover,
 .btn-group-vertical > .btn:focus,
+#login .btn-group-vertical > button:focus,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:focus,
 .btn-group-vertical > a.paginate_button:focus,
 .btn-group-vertical > a.paginate_active:focus,
 .btn-group-vertical > .btn:active,
+#login .btn-group-vertical > button:active,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:active,
 .btn-group-vertical > a.paginate_button:active,
 .btn-group-vertical > a.paginate_active:active,
 .btn-group-vertical > .btn.active,
+#login .btn-group-vertical > button.active,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a.active,
 .btn-group-vertical > a.active.paginate_button,
 .btn-group-vertical > a.active.paginate_active {
   z-index: 2;
 }
 /* line 21, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:focus, .dataTables_paginate.paging_full_numbers .btn-group > a:focus, .btn-group > a.paginate_button:focus, .btn-group > a.paginate_active:focus,
+.btn-group > .btn:focus, #login .btn-group > button:focus, .dataTables_paginate.paging_full_numbers .btn-group > a:focus, .btn-group > a.paginate_button:focus, .btn-group > a.paginate_active:focus,
 .btn-group-vertical > .btn:focus,
+#login .btn-group-vertical > button:focus,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:focus,
 .btn-group-vertical > a.paginate_button:focus,
 .btn-group-vertical > a.paginate_active:focus {
@@ -4554,13 +4581,17 @@ tbody.collapse.in {
 }
 
 /* line 33, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn, .btn-group .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .btn-group a + .btn, .btn-group a.paginate_button + .btn, .btn-group a.paginate_active + .btn, .btn-group .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .btn-group .btn + a, .btn-group .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .btn-group a + a, .btn-group .btn + a.paginate_button, .btn-group a.paginate_button + a.paginate_button, .btn-group a.paginate_active + a.paginate_button, .btn-group .btn + a.paginate_active, .btn-group a.paginate_button + a.paginate_active, .btn-group a.paginate_active + a.paginate_active,
+.btn-group .btn + .btn, .btn-group #login button + .btn, #login .btn-group button + .btn, .btn-group .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .btn-group a + .btn, .btn-group a.paginate_button + .btn, .btn-group a.paginate_active + .btn, .btn-group #login .btn + button, #login .btn-group .btn + button, .btn-group #login button + button, #login .btn-group button + button, .btn-group .dataTables_paginate.paging_full_numbers #login a + button, #login .btn-group .dataTables_paginate.paging_full_numbers a + button, .dataTables_paginate.paging_full_numbers .btn-group #login a + button, #login .dataTables_paginate.paging_full_numbers .btn-group a + button, .btn-group #login a.paginate_button + button, #login .btn-group a.paginate_button + button, .btn-group #login a.paginate_active + button, #login .btn-group a.paginate_active + button, .btn-group .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .btn-group .btn + a, .btn-group #login .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers .btn-group #login button + a, #login .btn-group .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers #login .btn-group button + a, .btn-group .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .btn-group a + a, .btn-group .btn + a.paginate_button, .btn-group #login button + a.paginate_button, #login .btn-group button + a.paginate_button, .btn-group a.paginate_button + a.paginate_button, .btn-group a.paginate_active + a.paginate_button, .btn-group .btn + a.paginate_active, .btn-group #login button + a.paginate_active, #login .btn-group button + a.paginate_active, .btn-group a.paginate_button + a.paginate_active, .btn-group a.paginate_active + a.paginate_active,
 .btn-group .btn + .btn-group,
+.btn-group #login button + .btn-group,
+#login .btn-group button + .btn-group,
 .btn-group .dataTables_paginate.paging_full_numbers a + .btn-group,
 .dataTables_paginate.paging_full_numbers .btn-group a + .btn-group,
 .btn-group a.paginate_button + .btn-group,
 .btn-group a.paginate_active + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group #login .btn-group + button,
+#login .btn-group .btn-group + button,
 .btn-group .dataTables_paginate.paging_full_numbers .btn-group + a,
 .dataTables_paginate.paging_full_numbers .btn-group .btn-group + a,
 .btn-group .btn-group + a.paginate_button,
@@ -4588,29 +4619,29 @@ tbody.collapse.in {
   float: left;
 }
 /* line 49, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn, .dataTables_paginate.paging_full_numbers .btn-toolbar > a, .btn-toolbar > a.paginate_button, .btn-toolbar > a.paginate_active,
+.btn-toolbar > .btn, #login .btn-toolbar > button, .dataTables_paginate.paging_full_numbers .btn-toolbar > a, .btn-toolbar > a.paginate_button, .btn-toolbar > a.paginate_active,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
 /* line 54, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .dataTables_paginate.paging_full_numbers .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_active:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #login .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle), .dataTables_paginate.paging_full_numbers .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_active:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
 /* line 59, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, .dataTables_paginate.paging_full_numbers .btn-group > a:first-child, .btn-group > a.paginate_button:first-child, .btn-group > a.paginate_active:first-child {
+.btn-group > .btn:first-child, #login .btn-group > button:first-child, .dataTables_paginate.paging_full_numbers .btn-group > a:first-child, .btn-group > a.paginate_button:first-child, .btn-group > a.paginate_active:first-child {
   margin-left: 0;
 }
 /* line 61, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .dataTables_paginate.paging_full_numbers .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_active:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #login .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle), .dataTables_paginate.paging_full_numbers .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > a.paginate_active:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 67, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child), .dataTables_paginate.paging_full_numbers .btn-group > a:last-child:not(:first-child), .btn-group > a.paginate_button:last-child:not(:first-child), .btn-group > a.paginate_active:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), #login .btn-group > button:last-child:not(:first-child), .dataTables_paginate.paging_full_numbers .btn-group > a:last-child:not(:first-child), .btn-group > a.paginate_button:last-child:not(:first-child), .btn-group > a.paginate_active:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4622,19 +4653,19 @@ tbody.collapse.in {
 }
 
 /* line 75, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .btn-group > .btn-group:not(:first-child):not(:last-child) > a.paginate_button, .btn-group > .btn-group:not(:first-child):not(:last-child) > a.paginate_active {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #login .btn-group > .btn-group:not(:first-child):not(:last-child) > button, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .btn-group > .btn-group:not(:first-child):not(:last-child) > a.paginate_button, .btn-group > .btn-group:not(:first-child):not(:last-child) > a.paginate_active {
   border-radius: 0;
 }
 
 /* line 80, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:first-child > .btn:last-child, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:first-child > a:last-child, .btn-group > .btn-group:first-child > a.paginate_button:last-child, .btn-group > .btn-group:first-child > a.paginate_active:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child, #login .btn-group > .btn-group:first-child > button:last-child, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:first-child > a:last-child, .btn-group > .btn-group:first-child > a.paginate_button:last-child, .btn-group > .btn-group:first-child > a.paginate_active:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
 /* line 84, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-group:last-child > .btn:first-child, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:last-child > a:first-child, .btn-group > .btn-group:last-child > a.paginate_button:first-child, .btn-group > .btn-group:last-child > a.paginate_active:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child, #login .btn-group > .btn-group:last-child > button:first-child, .dataTables_paginate.paging_full_numbers .btn-group > .btn-group:last-child > a:first-child, .btn-group > .btn-group:last-child > a.paginate_button:first-child, .btn-group > .btn-group:last-child > a.paginate_active:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4646,13 +4677,13 @@ tbody.collapse.in {
 }
 
 /* line 108, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, .dataTables_paginate.paging_full_numbers .btn-group > a + .dropdown-toggle, .btn-group > a.paginate_button + .dropdown-toggle, .btn-group > a.paginate_active + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, #login .btn-group > button + .dropdown-toggle, .dataTables_paginate.paging_full_numbers .btn-group > a + .dropdown-toggle, .btn-group > a.paginate_button + .dropdown-toggle, .btn-group > a.paginate_active + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 /* line 112, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .dataTables_paginate.paging_full_numbers .btn-group-lg.btn-group > a + .dropdown-toggle, .btn-group-lg.btn-group > a.paginate_button + .dropdown-toggle, .btn-group-lg.btn-group > a.paginate_active + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, #login .btn-group-lg.btn-group > button + .dropdown-toggle, .dataTables_paginate.paging_full_numbers .btn-group-lg.btn-group > a + .dropdown-toggle, .btn-group-lg.btn-group > a.paginate_button + .dropdown-toggle, .btn-group-lg.btn-group > a.paginate_active + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4669,25 +4700,26 @@ tbody.collapse.in {
 }
 
 /* line 130, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn .caret, .dataTables_paginate.paging_full_numbers a .caret, a.paginate_button .caret, a.paginate_active .caret {
+.btn .caret, #login button .caret, .dataTables_paginate.paging_full_numbers a .caret, a.paginate_button .caret, a.paginate_active .caret {
   margin-left: 0;
 }
 
 /* line 134, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-lg .caret, .btn-group-lg > .btn .caret, .dataTables_paginate.paging_full_numbers .btn-group-lg > a .caret, .btn-group-lg > a.paginate_button .caret, .btn-group-lg > a.paginate_active .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, #login .btn-group-lg > button .caret, .dataTables_paginate.paging_full_numbers .btn-group-lg > a .caret, .btn-group-lg > a.paginate_button .caret, .btn-group-lg > a.paginate_active .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
 /* line 139, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .dataTables_paginate.paging_full_numbers .btn-group-lg > a .caret, .dataTables_paginate.paging_full_numbers .dropup .btn-group-lg > a .caret, .dropup .btn-group-lg > a.paginate_button .caret, .dropup .btn-group-lg > a.paginate_active .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup #login .btn-group-lg > button .caret, #login .dropup .btn-group-lg > button .caret, .dropup .dataTables_paginate.paging_full_numbers .btn-group-lg > a .caret, .dataTables_paginate.paging_full_numbers .dropup .btn-group-lg > a .caret, .dropup .btn-group-lg > a.paginate_button .caret, .dropup .btn-group-lg > a.paginate_active .caret {
   border-width: 0 5px 5px;
 }
 
 /* line 150, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a, .btn-group-vertical > a.paginate_button, .btn-group-vertical > a.paginate_active,
+.btn-group-vertical > .btn, #login .btn-group-vertical > button, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a, .btn-group-vertical > a.paginate_button, .btn-group-vertical > a.paginate_active,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
+#login .btn-group-vertical > .btn-group > button,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group > a,
 .btn-group-vertical > .btn-group > a.paginate_button,
 .btn-group-vertical > .btn-group > a.paginate_active {
@@ -4706,16 +4738,18 @@ tbody.collapse.in {
   clear: both;
 }
 /* line 160, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group > .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group > a, .btn-group-vertical > .btn-group > a.paginate_button, .btn-group-vertical > .btn-group > a.paginate_active {
+.btn-group-vertical > .btn-group > .btn, #login .btn-group-vertical > .btn-group > button, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group > a, .btn-group-vertical > .btn-group > a.paginate_button, .btn-group-vertical > .btn-group > a.paginate_active {
   float: none;
 }
 /* line 168, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + .btn, .btn-group-vertical > a.paginate_button + .btn, .btn-group-vertical > a.paginate_active + .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn + a, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + a, .btn-group-vertical > .btn + a.paginate_button, .btn-group-vertical > a.paginate_button + a.paginate_button, .btn-group-vertical > a.paginate_active + a.paginate_button, .btn-group-vertical > .btn + a.paginate_active, .btn-group-vertical > a.paginate_button + a.paginate_active, .btn-group-vertical > a.paginate_active + a.paginate_active,
+.btn-group-vertical > .btn + .btn, #login .btn-group-vertical > button + .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + .btn, .btn-group-vertical > a.paginate_button + .btn, .btn-group-vertical > a.paginate_active + .btn, #login .btn-group-vertical > .btn + button, #login .btn-group-vertical > button + button, .dataTables_paginate.paging_full_numbers #login .btn-group-vertical > a + button, #login .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + button, #login .btn-group-vertical > a.paginate_button + button, #login .btn-group-vertical > a.paginate_active + button, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn + a, #login .dataTables_paginate.paging_full_numbers .btn-group-vertical > button + a, .dataTables_paginate.paging_full_numbers #login .btn-group-vertical > button + a, .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + a, .btn-group-vertical > .btn + a.paginate_button, #login .btn-group-vertical > button + a.paginate_button, .btn-group-vertical > a.paginate_button + a.paginate_button, .btn-group-vertical > a.paginate_active + a.paginate_button, .btn-group-vertical > .btn + a.paginate_active, #login .btn-group-vertical > button + a.paginate_active, .btn-group-vertical > a.paginate_button + a.paginate_active, .btn-group-vertical > a.paginate_active + a.paginate_active,
 .btn-group-vertical > .btn + .btn-group,
+#login .btn-group-vertical > button + .btn-group,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > a + .btn-group,
 .btn-group-vertical > a.paginate_button + .btn-group,
 .btn-group-vertical > a.paginate_active + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+#login .btn-group-vertical > .btn-group + button,
 .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group + a,
 .btn-group-vertical > .btn-group + a.paginate_button,
 .btn-group-vertical > .btn-group + a.paginate_active,
@@ -4725,36 +4759,36 @@ tbody.collapse.in {
 }
 
 /* line 175, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:not(:first-child):not(:last-child), .btn-group-vertical > a.paginate_button:not(:first-child):not(:last-child), .btn-group-vertical > a.paginate_active:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), #login .btn-group-vertical > button:not(:first-child):not(:last-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:not(:first-child):not(:last-child), .btn-group-vertical > a.paginate_button:not(:first-child):not(:last-child), .btn-group-vertical > a.paginate_active:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 178, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:first-child:not(:last-child), .btn-group-vertical > a.paginate_button:first-child:not(:last-child), .btn-group-vertical > a.paginate_active:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), #login .btn-group-vertical > button:first-child:not(:last-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:first-child:not(:last-child), .btn-group-vertical > a.paginate_button:first-child:not(:last-child), .btn-group-vertical > a.paginate_active:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 /* line 182, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:last-child:not(:first-child), .btn-group-vertical > a.paginate_button:last-child:not(:first-child), .btn-group-vertical > a.paginate_active:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), #login .btn-group-vertical > button:last-child:not(:first-child), .dataTables_paginate.paging_full_numbers .btn-group-vertical > a:last-child:not(:first-child), .btn-group-vertical > a.paginate_button:last-child:not(:first-child), .btn-group-vertical > a.paginate_active:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 187, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.paginate_button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.paginate_active {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #login .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.paginate_button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.paginate_active {
   border-radius: 0;
 }
 
 /* line 192, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.paginate_button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.paginate_active:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #login .btn-group-vertical > .btn-group:first-child:not(:last-child) > button:last-child, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.paginate_button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.paginate_active:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
 /* line 196, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.paginate_button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.paginate_active:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #login .btn-group-vertical > .btn-group:last-child:not(:first-child) > button:first-child, .dataTables_paginate.paging_full_numbers .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.paginate_button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.paginate_active:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4767,20 +4801,21 @@ tbody.collapse.in {
   border-collapse: separate;
 }
 /* line 211, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn, .dataTables_paginate.paging_full_numbers .btn-group-justified > a, .btn-group-justified > a.paginate_button, .btn-group-justified > a.paginate_active,
+.btn-group-justified > .btn, #login .btn-group-justified > button, .dataTables_paginate.paging_full_numbers .btn-group-justified > a, .btn-group-justified > a.paginate_button, .btn-group-justified > a.paginate_active,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
 /* line 216, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group a.paginate_button, .btn-group-justified > .btn-group a.paginate_active {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group #login button, #login .btn-group-justified > .btn-group button, .btn-group-justified > .btn-group .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group a.paginate_button, .btn-group-justified > .btn-group a.paginate_active {
   width: 100%;
 }
 
 /* line 232, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-[data-toggle="buttons"] > .btn > input[type="radio"], .dataTables_paginate.paging_full_numbers [data-toggle="buttons"] > a > input[type="radio"], [data-toggle="buttons"] > a.paginate_button > input[type="radio"], [data-toggle="buttons"] > a.paginate_active > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="radio"], #login [data-toggle="buttons"] > button > input[type="radio"], .dataTables_paginate.paging_full_numbers [data-toggle="buttons"] > a > input[type="radio"], [data-toggle="buttons"] > a.paginate_button > input[type="radio"], [data-toggle="buttons"] > a.paginate_active > input[type="radio"],
 [data-toggle="buttons"] > .btn > input[type="checkbox"],
+#login [data-toggle="buttons"] > button > input[type="checkbox"],
 .dataTables_paginate.paging_full_numbers [data-toggle="buttons"] > a > input[type="checkbox"],
 [data-toggle="buttons"] > a.paginate_button > input[type="checkbox"],
 [data-toggle="buttons"] > a.paginate_active > input[type="checkbox"] {
@@ -4802,7 +4837,7 @@ tbody.collapse.in {
   padding-right: 0;
 }
 /* line 19, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group .form-control {
+.input-group .form-control, .input-group #login input, #login .input-group input {
   position: relative;
   z-index: 2;
   float: left;
@@ -4813,13 +4848,17 @@ tbody.collapse.in {
 /* line 52, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control {
+.input-group .form-control,
+.input-group #login input,
+#login .input-group input {
   display: table-cell;
 }
 /* line 55, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
-.input-group .form-control:not(:first-child):not(:last-child) {
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group #login input:not(:first-child):not(:last-child),
+#login .input-group input:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4844,9 +4883,10 @@ tbody.collapse.in {
   border-radius: 4px;
 }
 /* line 81, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-addon.input-sm,
+.input-group-addon.input-sm, #login .input-group-sm > input.input-group-addon,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
+#login .input-group-sm > .input-group-btn > button.input-group-addon,
 .dataTables_paginate.paging_full_numbers .input-group-sm > .input-group-btn > a.input-group-addon,
 .input-group-sm > .input-group-btn > a.input-group-addon.paginate_button,
 .input-group-sm > .input-group-btn > a.input-group-addon.paginate_active {
@@ -4855,9 +4895,10 @@ tbody.collapse.in {
   border-radius: 3px;
 }
 /* line 86, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-addon.input-lg,
+.input-group-addon.input-lg, #login .input-group-lg > input.input-group-addon,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
+#login .input-group-lg > .input-group-btn > button.input-group-addon,
 .dataTables_paginate.paging_full_numbers .input-group-lg > .input-group-btn > a.input-group-addon,
 .input-group-lg > .input-group-btn > a.input-group-addon.paginate_button,
 .input-group-lg > .input-group-btn > a.input-group-addon.paginate_active {
@@ -4872,22 +4913,26 @@ tbody.collapse.in {
 }
 
 /* line 106, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group .form-control:first-child,
+.input-group .form-control:first-child, .input-group #login input:first-child, #login .input-group input:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+#login .input-group-btn:first-child > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > a,
 .input-group-btn:first-child > a.paginate_button,
 .input-group-btn:first-child > a.paginate_active,
 .input-group-btn:first-child > .btn-group > .btn,
+#login .input-group-btn:first-child > .btn-group > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > .btn-group > a,
 .input-group-btn:first-child > .btn-group > a.paginate_button,
 .input-group-btn:first-child > .btn-group > a.paginate_active,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+#login .input-group-btn:last-child > button:not(:last-child):not(.dropdown-toggle),
 .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > a.paginate_button:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > a.paginate_active:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+#login .input-group-btn:last-child > .btn-group:not(:last-child) > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > .btn-group:not(:last-child) > a,
 .input-group-btn:last-child > .btn-group:not(:last-child) > a.paginate_button,
 .input-group-btn:last-child > .btn-group:not(:last-child) > a.paginate_active {
@@ -4901,22 +4946,26 @@ tbody.collapse.in {
 }
 
 /* line 118, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group .form-control:last-child,
+.input-group .form-control:last-child, .input-group #login input:last-child, #login .input-group input:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+#login .input-group-btn:last-child > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > a,
 .input-group-btn:last-child > a.paginate_button,
 .input-group-btn:last-child > a.paginate_active,
 .input-group-btn:last-child > .btn-group > .btn,
+#login .input-group-btn:last-child > .btn-group > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > .btn-group > a,
 .input-group-btn:last-child > .btn-group > a.paginate_button,
 .input-group-btn:last-child > .btn-group > a.paginate_active,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
+#login .input-group-btn:first-child > button:not(:first-child),
 .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > a:not(:first-child),
 .input-group-btn:first-child > a.paginate_button:not(:first-child),
 .input-group-btn:first-child > a.paginate_active:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+#login .input-group-btn:first-child > .btn-group:not(:first-child) > button,
 .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > .btn-group:not(:first-child) > a,
 .input-group-btn:first-child > .btn-group:not(:first-child) > a.paginate_button,
 .input-group-btn:first-child > .btn-group:not(:first-child) > a.paginate_active {
@@ -4936,84 +4985,84 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 /* line 136, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn, .dataTables_paginate.paging_full_numbers .input-group-btn > a, .input-group-btn > a.paginate_button, .input-group-btn > a.paginate_active {
+.input-group-btn > .btn, #login .input-group-btn > button, .dataTables_paginate.paging_full_numbers .input-group-btn > a, .input-group-btn > a.paginate_button, .input-group-btn > a.paginate_active {
   position: relative;
 }
 /* line 138, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn + .btn, .dataTables_paginate.paging_full_numbers .input-group-btn > a + .btn, .input-group-btn > a.paginate_button + .btn, .input-group-btn > a.paginate_active + .btn, .dataTables_paginate.paging_full_numbers .input-group-btn > .btn + a, .dataTables_paginate.paging_full_numbers .input-group-btn > a + a, .input-group-btn > .btn + a.paginate_button, .input-group-btn > a.paginate_button + a.paginate_button, .input-group-btn > a.paginate_active + a.paginate_button, .input-group-btn > .btn + a.paginate_active, .input-group-btn > a.paginate_button + a.paginate_active, .input-group-btn > a.paginate_active + a.paginate_active {
+.input-group-btn > .btn + .btn, #login .input-group-btn > button + .btn, .dataTables_paginate.paging_full_numbers .input-group-btn > a + .btn, .input-group-btn > a.paginate_button + .btn, .input-group-btn > a.paginate_active + .btn, #login .input-group-btn > .btn + button, #login .input-group-btn > button + button, .dataTables_paginate.paging_full_numbers #login .input-group-btn > a + button, #login .dataTables_paginate.paging_full_numbers .input-group-btn > a + button, #login .input-group-btn > a.paginate_button + button, #login .input-group-btn > a.paginate_active + button, .dataTables_paginate.paging_full_numbers .input-group-btn > .btn + a, #login .dataTables_paginate.paging_full_numbers .input-group-btn > button + a, .dataTables_paginate.paging_full_numbers #login .input-group-btn > button + a, .dataTables_paginate.paging_full_numbers .input-group-btn > a + a, .input-group-btn > .btn + a.paginate_button, #login .input-group-btn > button + a.paginate_button, .input-group-btn > a.paginate_button + a.paginate_button, .input-group-btn > a.paginate_active + a.paginate_button, .input-group-btn > .btn + a.paginate_active, #login .input-group-btn > button + a.paginate_active, .input-group-btn > a.paginate_button + a.paginate_active, .input-group-btn > a.paginate_active + a.paginate_active {
   margin-left: -1px;
 }
 /* line 144, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, .dataTables_paginate.paging_full_numbers .input-group-btn > a:hover, .input-group-btn > a.paginate_button:hover, .input-group-btn > a.paginate_active:hover, .input-group-btn > .btn:focus, .dataTables_paginate.paging_full_numbers .input-group-btn > a:focus, .input-group-btn > a.paginate_button:focus, .input-group-btn > a.paginate_active:focus, .input-group-btn > .btn:active, .dataTables_paginate.paging_full_numbers .input-group-btn > a:active, .input-group-btn > a.paginate_button:active, .input-group-btn > a.paginate_active:active {
+.input-group-btn > .btn:hover, #login .input-group-btn > button:hover, .dataTables_paginate.paging_full_numbers .input-group-btn > a:hover, .input-group-btn > a.paginate_button:hover, .input-group-btn > a.paginate_active:hover, .input-group-btn > .btn:focus, #login .input-group-btn > button:focus, .dataTables_paginate.paging_full_numbers .input-group-btn > a:focus, .input-group-btn > a.paginate_button:focus, .input-group-btn > a.paginate_active:focus, .input-group-btn > .btn:active, #login .input-group-btn > button:active, .dataTables_paginate.paging_full_numbers .input-group-btn > a:active, .input-group-btn > a.paginate_button:active, .input-group-btn > a.paginate_active:active {
   z-index: 2;
 }
 /* line 152, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn, .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > a, .input-group-btn:first-child > a.paginate_button, .input-group-btn:first-child > a.paginate_active,
+.input-group-btn:first-child > .btn, #login .input-group-btn:first-child > button, .dataTables_paginate.paging_full_numbers .input-group-btn:first-child > a, .input-group-btn:first-child > a.paginate_button, .input-group-btn:first-child > a.paginate_active,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
 /* line 158, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn, .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > a, .input-group-btn:last-child > a.paginate_button, .input-group-btn:last-child > a.paginate_active,
+.input-group-btn:last-child > .btn, #login .input-group-btn:last-child > button, .dataTables_paginate.paging_full_numbers .input-group-btn:last-child > a, .input-group-btn:last-child > a.paginate_button, .input-group-btn:last-child > a.paginate_active,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
 
 /* line 9, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav, .side-nav .inner ul {
+.nav, #navbar-right, .side-nav .inner ul {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 /* line 15, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.nav:before, .side-nav .inner ul:before, .nav:after, .side-nav .inner ul:after {
+.nav:before, #navbar-right:before, .side-nav .inner ul:before, .nav:after, #navbar-right:after, .side-nav .inner ul:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.nav:after, .side-nav .inner ul:after {
+.nav:after, #navbar-right:after, .side-nav .inner ul:after {
   clear: both;
 }
 /* line 15, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li, .side-nav .inner ul > li {
+.nav > li, #navbar-right > li, .side-nav .inner ul > li {
   position: relative;
   display: block;
 }
 /* line 19, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a, .side-nav .inner ul > li > a {
+.nav > li > a, #navbar-right > li > a, .side-nav .inner ul > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 /* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a:hover, .side-nav .inner ul > li > a:hover, .nav > li > a:focus, .side-nav .inner ul > li > a:focus {
+.nav > li > a:hover, #navbar-right > li > a:hover, .side-nav .inner ul > li > a:hover, .nav > li > a:focus, #navbar-right > li > a:focus, .side-nav .inner ul > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 /* line 31, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li.disabled > a, .side-nav .inner ul > li.disabled > a {
+.nav > li.disabled > a, #navbar-right > li.disabled > a, .side-nav .inner ul > li.disabled > a {
   color: #999999;
 }
 /* line 35, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li.disabled > a:hover, .side-nav .inner ul > li.disabled > a:hover, .nav > li.disabled > a:focus, .side-nav .inner ul > li.disabled > a:focus {
+.nav > li.disabled > a:hover, #navbar-right > li.disabled > a:hover, .side-nav .inner ul > li.disabled > a:hover, .nav > li.disabled > a:focus, #navbar-right > li.disabled > a:focus, .side-nav .inner ul > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 /* line 48, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav .open > a, .side-nav .inner ul .open > a, .nav .open > a:hover, .side-nav .inner ul .open > a:hover, .nav .open > a:focus, .side-nav .inner ul .open > a:focus {
+.nav .open > a, #navbar-right .open > a, .side-nav .inner ul .open > a, .nav .open > a:hover, #navbar-right .open > a:hover, .side-nav .inner ul .open > a:hover, .nav .open > a:focus, #navbar-right .open > a:focus, .side-nav .inner ul .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
 }
 /* line 59, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav .nav-divider, .side-nav .inner ul .nav-divider {
+.nav .nav-divider, #navbar-right .nav-divider, .side-nav .inner ul .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
 /* line 66, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a > img, .side-nav .inner ul > li > a > img {
+.nav > li > a > img, #navbar-right > li > a > img, .side-nav .inner ul > li > a > img {
   max-width: none;
 }
 
@@ -5367,18 +5416,18 @@ tbody.collapse.in {
 }
 
 /* line 228, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav {
+.navbar-nav, #navbar-right {
   margin: 7.5px -15px;
 }
 /* line 231, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav > li > a {
+.navbar-nav > li > a, #navbar-right > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
   /* line 239, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu {
+  .navbar-nav .open .dropdown-menu, #navbar-right .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -5388,36 +5437,37 @@ tbody.collapse.in {
     box-shadow: none;
   }
   /* line 248, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu > li > a, #navbar-right .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  #navbar-right .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
   /* line 251, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a, #navbar-right .open .dropdown-menu > li > a {
     line-height: 20px;
   }
   /* line 254, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-nav .open .dropdown-menu > li > a:hover, #navbar-right .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, #navbar-right .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
   /* line 228, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav {
+  .navbar-nav, #navbar-right {
     float: left;
     margin: 0;
   }
   /* line 266, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav > li {
+  .navbar-nav > li, #navbar-right > li {
     float: left;
   }
   /* line 268, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav > li > a {
+  .navbar-nav > li > a, #navbar-right > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
   /* line 274, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav.navbar-right:last-child {
+  .navbar-nav.navbar-right:last-child, #navbar-right:last-child {
     margin-right: -15px;
   }
 }
@@ -5429,12 +5479,12 @@ tbody.collapse.in {
   }
 
   /* line 291, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-right {
+  .navbar-right, #navbar-right {
     float: right !important;
   }
 }
 /* line 302, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-form {
+.navbar-form, #navbar-right {
   margin-left: -15px;
   margin-right: -15px;
   padding: 10px 15px;
@@ -5447,13 +5497,13 @@ tbody.collapse.in {
 }
 @media (max-width: 767px) {
   /* line 314, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-form .form-group {
+  .navbar-form .form-group, #navbar-right .form-group {
     margin-bottom: 5px;
   }
 }
 @media (min-width: 768px) {
   /* line 302, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-form {
+  .navbar-form, #navbar-right {
     width: auto;
     border: 0;
     margin-left: 0;
@@ -5464,20 +5514,20 @@ tbody.collapse.in {
     box-shadow: none;
   }
   /* line 334, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-form.navbar-right:last-child {
+  .navbar-form.navbar-right:last-child, #navbar-right:last-child {
     margin-right: -15px;
   }
 }
 
 /* line 344, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-nav > li > .dropdown-menu {
+.navbar-nav > li > .dropdown-menu, #navbar-right > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 /* line 349, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu, .navbar-fixed-bottom #navbar-right > li > .dropdown-menu {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -5488,12 +5538,12 @@ tbody.collapse.in {
   margin-bottom: 8px;
 }
 /* line 361, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .dataTables_paginate.paging_full_numbers .btn-group-sm > a.navbar-btn, .btn-group-sm > a.navbar-btn.paginate_button, .btn-group-sm > a.navbar-btn.paginate_active {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, #login .btn-group-sm > button.navbar-btn, .dataTables_paginate.paging_full_numbers .btn-group-sm > a.navbar-btn, .btn-group-sm > a.navbar-btn.paginate_button, .btn-group-sm > a.navbar-btn.paginate_active {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 /* line 364, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .dataTables_paginate.paging_full_numbers a.navbar-btn, a.navbar-btn.paginate_button, a.navbar-btn.paginate_active {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, #login .btn-group-xs > button.navbar-btn, .dataTables_paginate.paging_full_numbers a.navbar-btn, a.navbar-btn.paginate_button, a.navbar-btn.paginate_active {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5511,7 +5561,7 @@ tbody.collapse.in {
     margin-right: 15px;
   }
   /* line 383, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-text.navbar-right:last-child {
+  .navbar-text.navbar-right:last-child, .navbar-text#navbar-right:last-child {
     margin-right: 0;
   }
 }
@@ -5535,21 +5585,21 @@ tbody.collapse.in {
   color: #777777;
 }
 /* line 411, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > li > a, .project-nav .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .project-nav .navbar-nav > li > a, .navbar-default #navbar-right > li > a, .project-nav #navbar-right > li > a {
   color: white;
 }
 /* line 415, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > li > a:hover, .project-nav .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .project-nav .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .project-nav .navbar-nav > li > a:hover, .navbar-default #navbar-right > li > a:hover, .project-nav #navbar-right > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .project-nav .navbar-nav > li > a:focus, .navbar-default #navbar-right > li > a:focus, .project-nav #navbar-right > li > a:focus {
   color: #cccccc;
   background-color: transparent;
 }
 /* line 423, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .active > a, .project-nav .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .project-nav .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .project-nav .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .project-nav .navbar-nav > .active > a, .navbar-default #navbar-right > .active > a, .project-nav #navbar-right > .active > a, .navbar-default .navbar-nav > .active > a:hover, .project-nav .navbar-nav > .active > a:hover, .navbar-default #navbar-right > .active > a:hover, .project-nav #navbar-right > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .project-nav .navbar-nav > .active > a:focus, .navbar-default #navbar-right > .active > a:focus, .project-nav #navbar-right > .active > a:focus {
   color: #555555;
   background-color: #e7e7e7;
 }
 /* line 431, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .disabled > a, .project-nav .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .project-nav .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .project-nav .navbar-nav > .disabled > a:focus {
+.navbar-default .navbar-nav > .disabled > a, .project-nav .navbar-nav > .disabled > a, .navbar-default #navbar-right > .disabled > a, .project-nav #navbar-right > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .project-nav .navbar-nav > .disabled > a:hover, .navbar-default #navbar-right > .disabled > a:hover, .project-nav #navbar-right > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .project-nav .navbar-nav > .disabled > a:focus, .navbar-default #navbar-right > .disabled > a:focus, .project-nav #navbar-right > .disabled > a:focus {
   color: #cccccc;
   background-color: transparent;
 }
@@ -5568,31 +5618,33 @@ tbody.collapse.in {
 /* line 450, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse, .project-nav .navbar-collapse,
 .navbar-default .navbar-form,
-.project-nav .navbar-form {
+.project-nav .navbar-form,
+.navbar-default #navbar-right,
+.project-nav #navbar-right {
   border-color: #e7e7e7;
 }
 /* line 460, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .open > a, .project-nav .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .project-nav .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .project-nav .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a, .project-nav .navbar-nav > .open > a, .navbar-default #navbar-right > .open > a, .project-nav #navbar-right > .open > a, .navbar-default .navbar-nav > .open > a:hover, .project-nav .navbar-nav > .open > a:hover, .navbar-default #navbar-right > .open > a:hover, .project-nav #navbar-right > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .project-nav .navbar-nav > .open > a:focus, .navbar-default #navbar-right > .open > a:focus, .project-nav #navbar-right > .open > a:focus {
   background-color: #e7e7e7;
   color: #555555;
 }
 @media (max-width: 767px) {
   /* line 469, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .project-nav .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .project-nav .navbar-nav .open .dropdown-menu > li > a, .navbar-default #navbar-right .open .dropdown-menu > li > a, .project-nav #navbar-right .open .dropdown-menu > li > a {
     color: white;
   }
   /* line 472, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .project-nav .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .project-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .project-nav .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default #navbar-right .open .dropdown-menu > li > a:hover, .project-nav #navbar-right .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .project-nav .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default #navbar-right .open .dropdown-menu > li > a:focus, .project-nav #navbar-right .open .dropdown-menu > li > a:focus {
     color: #cccccc;
     background-color: transparent;
   }
   /* line 480, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .project-nav .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .project-nav .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .project-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .project-nav .navbar-nav .open .dropdown-menu > .active > a, .navbar-default #navbar-right .open .dropdown-menu > .active > a, .project-nav #navbar-right .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .project-nav .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default #navbar-right .open .dropdown-menu > .active > a:hover, .project-nav #navbar-right .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .project-nav .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default #navbar-right .open .dropdown-menu > .active > a:focus, .project-nav #navbar-right .open .dropdown-menu > .active > a:focus {
     color: #555555;
     background-color: #e7e7e7;
   }
   /* line 488, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default #navbar-right .open .dropdown-menu > .disabled > a, .project-nav #navbar-right .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default #navbar-right .open .dropdown-menu > .disabled > a:hover, .project-nav #navbar-right .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .project-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default #navbar-right .open .dropdown-menu > .disabled > a:focus, .project-nav #navbar-right .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
     background-color: transparent;
   }
@@ -5637,21 +5689,21 @@ tbody.collapse.in {
   color: #999999;
 }
 /* line 545, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse #navbar-right > li > a {
   color: #999999;
 }
 /* line 549, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse #navbar-right > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse #navbar-right > li > a:focus {
   color: white;
   background-color: transparent;
 }
 /* line 557, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse #navbar-right > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse #navbar-right > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse #navbar-right > .active > a:focus {
   color: white;
   background-color: #090909;
 }
 /* line 565, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse #navbar-right > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse #navbar-right > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse #navbar-right > .disabled > a:focus {
   color: #444444;
   background-color: transparent;
 }
@@ -5669,39 +5721,40 @@ tbody.collapse.in {
 }
 /* line 585, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
+.navbar-inverse .navbar-form,
+.navbar-inverse #navbar-right {
   border-color: #101010;
 }
 /* line 594, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse #navbar-right > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse #navbar-right > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse #navbar-right > .open > a:focus {
   background-color: #090909;
   color: white;
 }
 @media (max-width: 767px) {
   /* line 603, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header, .navbar-inverse #navbar-right .open .dropdown-menu > .dropdown-header {
     border-color: #090909;
   }
   /* line 606, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse #navbar-right .open .dropdown-menu .divider {
     background-color: #090909;
   }
   /* line 609, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse #navbar-right .open .dropdown-menu > li > a {
     color: #999999;
   }
   /* line 612, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse #navbar-right .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse #navbar-right .open .dropdown-menu > li > a:focus {
     color: white;
     background-color: transparent;
   }
   /* line 620, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse #navbar-right .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse #navbar-right .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse #navbar-right .open .dropdown-menu > .active > a:focus {
     color: white;
     background-color: #090909;
   }
   /* line 628, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse #navbar-right .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse #navbar-right .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse #navbar-right .open .dropdown-menu > .disabled > a:focus {
     color: #444444;
     background-color: transparent;
   }
@@ -5930,7 +5983,7 @@ tbody.collapse.in {
   display: none;
 }
 /* line 25, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_labels.scss */
-.btn .label, .dataTables_paginate.paging_full_numbers a .label, a.paginate_button .label, a.paginate_active .label {
+.btn .label, #login button .label, .dataTables_paginate.paging_full_numbers a .label, a.paginate_button .label, a.paginate_active .label {
   position: relative;
   top: -1px;
 }
@@ -6016,12 +6069,12 @@ a.label:hover, a.label:focus {
   display: none;
 }
 /* line 27, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_badges.scss */
-.btn .badge, .dataTables_paginate.paging_full_numbers a .badge, a.paginate_button .badge, a.paginate_active .badge {
+.btn .badge, #login button .badge, .dataTables_paginate.paging_full_numbers a .badge, a.paginate_button .badge, a.paginate_active .badge {
   position: relative;
   top: -1px;
 }
 /* line 31, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge, .dataTables_paginate.paging_full_numbers a .badge, a.paginate_button .badge, a.paginate_active .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, #login .btn-group-xs > button .badge, .dataTables_paginate.paging_full_numbers a .badge, a.paginate_button .badge, a.paginate_active .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -7179,12 +7232,12 @@ button.close {
   clear: both;
 }
 /* line 107, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .modal-footer a + .btn, .modal-footer a.paginate_button + .btn, .modal-footer a.paginate_active + .btn, .modal-footer .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn + a, .modal-footer .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .modal-footer a + a, .modal-footer .btn + a.paginate_button, .modal-footer a.paginate_button + a.paginate_button, .modal-footer a.paginate_active + a.paginate_button, .modal-footer .btn + a.paginate_active, .modal-footer a.paginate_button + a.paginate_active, .modal-footer a.paginate_active + a.paginate_active {
+.modal-footer .btn + .btn, .modal-footer #login button + .btn, #login .modal-footer button + .btn, .modal-footer .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .modal-footer a + .btn, .modal-footer a.paginate_button + .btn, .modal-footer a.paginate_active + .btn, .modal-footer #login .btn + button, #login .modal-footer .btn + button, .modal-footer #login button + button, #login .modal-footer button + button, .modal-footer .dataTables_paginate.paging_full_numbers #login a + button, #login .modal-footer .dataTables_paginate.paging_full_numbers a + button, .dataTables_paginate.paging_full_numbers .modal-footer #login a + button, #login .dataTables_paginate.paging_full_numbers .modal-footer a + button, .modal-footer #login a.paginate_button + button, #login .modal-footer a.paginate_button + button, .modal-footer #login a.paginate_active + button, #login .modal-footer a.paginate_active + button, .modal-footer .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn + a, .modal-footer #login .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers .modal-footer #login button + a, #login .modal-footer .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers #login .modal-footer button + a, .modal-footer .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .modal-footer a + a, .modal-footer .btn + a.paginate_button, .modal-footer #login button + a.paginate_button, #login .modal-footer button + a.paginate_button, .modal-footer a.paginate_button + a.paginate_button, .modal-footer a.paginate_active + a.paginate_button, .modal-footer .btn + a.paginate_active, .modal-footer #login button + a.paginate_active, #login .modal-footer button + a.paginate_active, .modal-footer a.paginate_button + a.paginate_active, .modal-footer a.paginate_active + a.paginate_active {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 112, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group a + .btn, .modal-footer .btn-group a.paginate_button + .btn, .modal-footer .btn-group a.paginate_active + .btn, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group .btn + a, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group a + a, .modal-footer .btn-group .btn + a.paginate_button, .modal-footer .btn-group a.paginate_button + a.paginate_button, .modal-footer .btn-group a.paginate_active + a.paginate_button, .modal-footer .btn-group .btn + a.paginate_active, .modal-footer .btn-group a.paginate_button + a.paginate_active, .modal-footer .btn-group a.paginate_active + a.paginate_active {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group #login button + .btn, #login .modal-footer .btn-group button + .btn, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers a + .btn, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group a + .btn, .modal-footer .btn-group a.paginate_button + .btn, .modal-footer .btn-group a.paginate_active + .btn, .modal-footer .btn-group #login .btn + button, #login .modal-footer .btn-group .btn + button, .modal-footer .btn-group #login button + button, #login .modal-footer .btn-group button + button, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers #login a + button, #login .modal-footer .btn-group .dataTables_paginate.paging_full_numbers a + button, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group #login a + button, #login .dataTables_paginate.paging_full_numbers .modal-footer .btn-group a + button, .modal-footer .btn-group #login a.paginate_button + button, #login .modal-footer .btn-group a.paginate_button + button, .modal-footer .btn-group #login a.paginate_active + button, #login .modal-footer .btn-group a.paginate_active + button, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers .btn + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group .btn + a, .modal-footer .btn-group #login .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group #login button + a, #login .modal-footer .btn-group .dataTables_paginate.paging_full_numbers button + a, .dataTables_paginate.paging_full_numbers #login .modal-footer .btn-group button + a, .modal-footer .btn-group .dataTables_paginate.paging_full_numbers a + a, .dataTables_paginate.paging_full_numbers .modal-footer .btn-group a + a, .modal-footer .btn-group .btn + a.paginate_button, .modal-footer .btn-group #login button + a.paginate_button, #login .modal-footer .btn-group button + a.paginate_button, .modal-footer .btn-group a.paginate_button + a.paginate_button, .modal-footer .btn-group a.paginate_active + a.paginate_button, .modal-footer .btn-group .btn + a.paginate_active, .modal-footer .btn-group #login button + a.paginate_active, #login .modal-footer .btn-group button + a.paginate_active, .modal-footer .btn-group a.paginate_button + a.paginate_active, .modal-footer .btn-group a.paginate_active + a.paginate_active {
   margin-left: -1px;
 }
 /* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_modals.scss */
@@ -7678,7 +7731,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 /* line 200, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_carousel.scss */
-.carousel-caption .btn, .carousel-caption .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers .carousel-caption a, .carousel-caption a.paginate_button, .carousel-caption a.paginate_active {
+.carousel-caption .btn, .carousel-caption #login button, #login .carousel-caption button, .carousel-caption .dataTables_paginate.paging_full_numbers a, .dataTables_paginate.paging_full_numbers .carousel-caption a, .carousel-caption a.paginate_button, .carousel-caption a.paginate_active {
   text-shadow: none;
 }
 
@@ -10188,7 +10241,40 @@ li a {
   margin-bottom: 0;
 }
 
-/* line 99, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
+#login {
+  padding-top: 5%;
+}
+
+/* line 119, ../sass/styles.scss */
+#navbar-right #logout_link {
+  font-weight: bolder;
+  color: crimson;
+}
+/* line 123, ../sass/styles.scss */
+#navbar-right #logout_link:hover {
+  color: red;
+  text-decoration: none;
+}
+/* line 127, ../sass/styles.scss */
+#navbar-right i {
+  padding-right: 5px;
+}
+/* line 130, ../sass/styles.scss */
+#navbar-right .user {
+  cursor: pointer;
+}
+/* line 134, ../sass/styles.scss */
+#navbar-right .user:hover {
+  cursor: hand;
+  color: #3276b1 !important;
+}
+/* line 139, ../sass/styles.scss */
+#navbar-right p {
+  margin-bottom: 0;
+}
+
+/* line 145, ../sass/styles.scss */
 h3 {
   margin: 0;
   margin-bottom: 10px;
@@ -10198,7 +10284,7 @@ h3 {
   font-color: #666 !important;
   padding: 5px;
 }
-/* line 110, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 h3 i {
   color: #aaa;
   font-weight: bold;
@@ -10206,28 +10292,28 @@ h3 i {
   cursor: pointer;
   margin-left: 10px;
 }
-/* line 117, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 h3 i.selected {
   color: #333;
 }
-/* line 120, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 h3 i:hover {
   color: #333;
   cursor: hand;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .row {
   padding: 0 5% 0 5%;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .project-nav {
   background: #384042;
   color: white;
 }
 
-/* line 134, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .outer {
   background-color: #fff;
   border-radius: 3px;
@@ -10236,12 +10322,12 @@ h3 i:hover {
   font-size: 0.8em !important;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 .activities {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 143, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .activities .inner {
   overflow-y: auto;
   height: auto;
@@ -10280,7 +10366,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 146, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .activities .inner-mini {
   overflow-y: auto;
   height: 11%;
@@ -10321,12 +10407,12 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .scrollable {
   overflow-y: auto !important;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .stat {
   margin-right: 2%;
   display: inline-block;
@@ -10334,19 +10420,19 @@ h3 i:hover {
   font-family: SourceSansPro-Regular;
   text-align: center;
 }
-/* line 162, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .stat span.digit {
   color: #3276b1 !important;
   font-size: 1.3em;
   margin-left: 15px;
   display: block;
 }
-/* line 168, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .stat span.text {
   padding-top: 5%;
   display: block;
 }
-/* line 172, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .stat .icon, .stat .icon-alt {
   float: left;
   margin-top: 5%;
@@ -10358,33 +10444,33 @@ h3 i:hover {
   background: #3276b1 !important;
   color: white;
 }
-/* line 183, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 .stat .icon i, .stat .icon-alt i {
   margin-top: 13px;
   font-size: 1.5em;
 }
-/* line 189, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .stat .icon-alt {
   background: #5bc0de !important;
 }
-/* line 193, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .stat div {
   vertical-align: top;
   display: inline-block;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 #county {
   margin-top: 1%;
   font-size: 1.3em;
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 249, ../sass/styles.scss */
 .guide {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 208, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .guide .inner {
   overflow-y: auto;
   height: 10%;
@@ -10423,7 +10509,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 211, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .guide .inner-mini {
   overflow-y: auto;
   height: 5%;
@@ -10463,12 +10549,12 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 216, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .x-large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 221, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .x-large-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10508,32 +10594,32 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 225, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .x-large-graph .inner.mini, .x-large-graph .inner.mini-graph, .x-large-graph .inner.mini-graph-2 {
   width: 24.7%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 229, ../sass/styles.scss */
+/* line 275, ../sass/styles.scss */
 .x-large-graph .inner.mini table, .x-large-graph .inner.mini-graph table, .x-large-graph .inner.mini-graph-2 table {
   font-size: 0.7em !important;
 }
-/* line 234, ../sass/styles.scss */
+/* line 280, ../sass/styles.scss */
 .x-large-graph .inner.mini-graph-2 {
   width: 49%;
 }
-/* line 237, ../sass/styles.scss */
+/* line 283, ../sass/styles.scss */
 .x-large-graph .table {
   max-height: 100%;
   overflow-y: scroll;
 }
 
-/* line 242, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 247, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .large-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10573,13 +10659,13 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 .side-nav {
   position: absolute;
   top: 30%;
   left: 0;
 }
-/* line 257, ../sass/styles.scss */
+/* line 303, ../sass/styles.scss */
 .side-nav .inner {
   overflow-y: auto;
   height: 35%;
@@ -10619,36 +10705,36 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 260, ../sass/styles.scss */
+/* line 306, ../sass/styles.scss */
 .side-nav .inner ul {
   margin-bottom: 0 !important;
   padding: 0;
 }
-/* line 267, ../sass/styles.scss */
+/* line 313, ../sass/styles.scss */
 .side-nav .inner ul li a {
   color: #333;
 }
-/* line 270, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 .side-nav .inner ul li a:hover {
   color: #428bca;
 }
 
-/* line 279, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 .panel-collapse {
   padding: 10px;
 }
 
-/* line 282, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 .panel-body {
   border-top: none !important;
 }
 
-/* line 285, ../sass/styles.scss */
+/* line 331, ../sass/styles.scss */
 .panel-group {
   margin-top: 10px;
 }
 
-/* line 290, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 .typeahead,
 .tt-query,
 .tt-hint {
@@ -10658,24 +10744,24 @@ h3 i:hover {
   outline: none;
 }
 
-/* line 298, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 .typeahead {
   background-color: #fff;
 }
 
-/* line 304, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
 .tt-query {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 310, ../sass/styles.scss */
+/* line 356, ../sass/styles.scss */
 .tt-hint {
   color: #999999;
 }
 
-/* line 314, ../sass/styles.scss */
+/* line 360, ../sass/styles.scss */
 .tt-dropdown-menu {
   background: #fff;
   width: 100%;
@@ -10686,33 +10772,33 @@ h3 i:hover {
   cursor: hand;
 }
 
-/* line 324, ../sass/styles.scss */
+/* line 370, ../sass/styles.scss */
 .tt-suggestion {
   padding: 3px 20px;
   font-size: 1.2em;
   line-height: 24px;
 }
 
-/* line 330, ../sass/styles.scss */
+/* line 376, ../sass/styles.scss */
 .tt-suggestion.tt-cursor {
   color: #fff;
   background-color: #3276b1;
 }
 
-/* line 336, ../sass/styles.scss */
+/* line 382, ../sass/styles.scss */
 .tt-suggestion p {
   margin: 0;
 }
 
-/* line 339, ../sass/styles.scss */
+/* line 385, ../sass/styles.scss */
 #search-bar {
   padding-bottom: 1%;
 }
-/* line 342, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 #search-bar span {
   width: 100%;
 }
-/* line 344, ../sass/styles.scss */
+/* line 390, ../sass/styles.scss */
 #search-bar span input {
   width: 100%;
   padding: 8px 12px;
@@ -10721,7 +10807,7 @@ h3 i:hover {
   box-shadow: 0px 1px 5px 0px #d3d3d3;
 }
 
-/* line 356, ../sass/styles.scss */
+/* line 402, ../sass/styles.scss */
 .search-section .inner {
   overflow-y: auto;
   height: 85%;
@@ -10761,19 +10847,19 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 360, ../sass/styles.scss */
+/* line 406, ../sass/styles.scss */
 .main, .search {
   position: absolute;
   width: 100%;
   height: 90%;
 }
 
-/* line 365, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 .standard-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 370, ../sass/styles.scss */
+/* line 416, ../sass/styles.scss */
 .standard-graph .inner {
   overflow-y: auto;
   height: 35%;
@@ -10813,19 +10899,19 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 374, ../sass/styles.scss */
+/* line 420, ../sass/styles.scss */
 .standard-graph .inner.mini {
   width: 24.7%;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 380, ../sass/styles.scss */
+/* line 426, ../sass/styles.scss */
 .standard-graph-lg {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 385, ../sass/styles.scss */
+/* line 431, ../sass/styles.scss */
 .standard-graph-lg .inner {
   overflow-y: auto;
   height: 37.5%;
@@ -10865,17 +10951,17 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 388, ../sass/styles.scss */
+/* line 434, ../sass/styles.scss */
 .standard-graph-lg .inner .graph {
   height: 80% !important;
 }
 
-/* line 394, ../sass/styles.scss */
+/* line 440, ../sass/styles.scss */
 .xx-large-graph {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 399, ../sass/styles.scss */
+/* line 445, ../sass/styles.scss */
 .xx-large-graph .inner {
   overflow-y: auto;
   height: 90%;
@@ -10915,28 +11001,28 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 402, ../sass/styles.scss */
+/* line 448, ../sass/styles.scss */
 .xx-large-graph .inner .graph {
   height: 100% !important;
 }
-/* line 406, ../sass/styles.scss */
+/* line 452, ../sass/styles.scss */
 .xx-large-graph .inner.mini {
   width: 49%;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 413, ../sass/styles.scss */
+/* line 459, ../sass/styles.scss */
 .map {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 417, ../sass/styles.scss */
+/* line 463, ../sass/styles.scss */
 .map .map-info {
   font-size: 1.4em;
   color: #666;
 }
-/* line 422, ../sass/styles.scss */
+/* line 468, ../sass/styles.scss */
 .map .inner {
   overflow-y: auto;
   height: 62.5%;
@@ -10975,7 +11061,7 @@ h3 i:hover {
   overflow-y: scroll;
   max-height: 60%;
 }
-/* line 425, ../sass/styles.scss */
+/* line 471, ../sass/styles.scss */
 .map .inner-mini {
   overflow-y: auto;
   height: 10%;
@@ -11016,7 +11102,7 @@ h3 i:hover {
   max-height: 60%;
 }
 
-/* line 433, ../sass/styles.scss */
+/* line 479, ../sass/styles.scss */
 table {
   width: 100%;
   margin: auto;
@@ -11025,12 +11111,12 @@ table {
 /*
  * DropDown Submenu
  */
-/* line 444, ../sass/styles.scss */
+/* line 490, ../sass/styles.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 447, ../sass/styles.scss */
+/* line 493, ../sass/styles.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -11041,12 +11127,12 @@ table {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 456, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 459, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -11061,17 +11147,17 @@ table {
   margin-right: -10px;
 }
 
-/* line 472, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff;
 }
 
-/* line 475, ../sass/styles.scss */
+/* line 521, ../sass/styles.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 478, ../sass/styles.scss */
+/* line 524, ../sass/styles.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -11080,60 +11166,60 @@ table {
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 486, ../sass/styles.scss */
-.btn, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
+/* line 532, ../sass/styles.scss */
+.btn, #login button, .dataTables_paginate.paging_full_numbers a, a.paginate_button, a.paginate_active {
   margin-top: 10px;
 }
 
-/* line 489, ../sass/styles.scss */
-.btn i, .dataTables_paginate.paging_full_numbers a i, a.paginate_button i, a.paginate_active i {
+/* line 535, ../sass/styles.scss */
+.btn i, #login button i, .dataTables_paginate.paging_full_numbers a i, a.paginate_button i, a.paginate_active i {
   margin-right: 5px;
 }
 
-/* line 492, ../sass/styles.scss */
+/* line 538, ../sass/styles.scss */
 .modal-footer > button {
   margin-top: -15px;
 }
 
-/* line 495, ../sass/styles.scss */
+/* line 541, ../sass/styles.scss */
 .date {
   padding-right: 2%;
   font-size: 0.8em;
 }
 
-/* line 499, ../sass/styles.scss */
+/* line 545, ../sass/styles.scss */
 .error {
   color: red;
 }
 
-/* line 502, ../sass/styles.scss */
+/* line 548, ../sass/styles.scss */
 .error i {
   padding-right: 10px;
 }
 
-/* line 505, ../sass/styles.scss */
+/* line 551, ../sass/styles.scss */
 td a {
   margin-right: 10px;
 }
 
-/* line 508, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 td a:hover {
   text-decoration: none;
 }
 
-/* line 512, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 .myModal {
   top: 100px !important;
   overflow: hidden !important;
 }
 
-/* line 516, ../sass/styles.scss */
+/* line 562, ../sass/styles.scss */
 .modal {
   top: 150px !important;
   overflow: hidden !important;
 }
 
-/* line 520, ../sass/styles.scss */
+/* line 566, ../sass/styles.scss */
 .navbar-brand {
   font-size: 2em !important;
 }
@@ -11141,12 +11227,12 @@ td a:hover {
 /*
  * DropDown Submenu
  */
-/* line 527, ../sass/styles.scss */
+/* line 573, ../sass/styles.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 530, ../sass/styles.scss */
+/* line 576, ../sass/styles.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -11157,12 +11243,12 @@ td a:hover {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 539, ../sass/styles.scss */
+/* line 585, ../sass/styles.scss */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* line 542, ../sass/styles.scss */
+/* line 588, ../sass/styles.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -11177,17 +11263,17 @@ td a:hover {
   margin-right: -10px;
 }
 
-/* line 555, ../sass/styles.scss */
+/* line 601, ../sass/styles.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff;
 }
 
-/* line 558, ../sass/styles.scss */
+/* line 604, ../sass/styles.scss */
 .dropdown-submenu.pull-left {
   float: none;
 }
 
-/* line 561, ../sass/styles.scss */
+/* line 607, ../sass/styles.scss */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
@@ -11199,19 +11285,19 @@ td a:hover {
 /**
 Span Styling
 */
-/* line 571, ../sass/styles.scss */
+/* line 617, ../sass/styles.scss */
 .map-footer {
   color: #666;
 }
-/* line 573, ../sass/styles.scss */
+/* line 619, ../sass/styles.scss */
 .map-footer span {
   padding: 5px;
 }
-/* line 575, ../sass/styles.scss */
+/* line 621, ../sass/styles.scss */
 .map-footer span i {
   padding-right: 5px;
 }
-/* line 578, ../sass/styles.scss */
+/* line 624, ../sass/styles.scss */
 .map-footer span .value {
   font-weight: bolder;
 }
@@ -11219,12 +11305,12 @@ Span Styling
 /**
  * 	Table
  */
-/* line 589, ../sass/styles.scss */
+/* line 635, ../sass/styles.scss */
 .remove {
   cursor: pointer;
 }
 
-/* line 592, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 .remove:hover {
   cursor: hand;
 }
@@ -11232,104 +11318,104 @@ Span Styling
 /**
  * 	Extra Divs
  */
-/* line 599, ../sass/styles.scss */
+/* line 645, ../sass/styles.scss */
 .reporting {
   height: 300px;
   width: 100%;
   padding-bottom: 20px;
 }
 
-/* line 604, ../sass/styles.scss */
+/* line 650, ../sass/styles.scss */
 .reporting label, .reportingBar label {
   vertical-align: top;
   display: inline-block;
   width: 40%;
 }
 
-/* line 609, ../sass/styles.scss */
+/* line 655, ../sass/styles.scss */
 .reporting .progress, .reportingBar .progress {
   display: inline-block;
   width: 55%;
   margin-bottom: 0;
 }
 
-/* line 614, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 #countyHeader {
   width: 35%;
 }
 
-/* line 617, ../sass/styles.scss */
+/* line 663, ../sass/styles.scss */
 #countyHeader, #progressHeader {
   background: #e3e3e3;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 622, ../sass/styles.scss */
+/* line 668, ../sass/styles.scss */
 #progressHeader {
   width: 60%;
 }
 
-/* line 625, ../sass/styles.scss */
+/* line 671, ../sass/styles.scss */
 .progressRow {
   padding: 2%;
   border-bottom: 1px solid #bbbbbb;
 }
 
-/* line 629, ../sass/styles.scss */
+/* line 675, ../sass/styles.scss */
 .reportingLabel {
   width: 30%;
   float: right;
 }
 
-/* line 633, ../sass/styles.scss */
+/* line 679, ../sass/styles.scss */
 .reportingLabel h6 {
   display: inline-block;
 }
 
-/* line 636, ../sass/styles.scss */
+/* line 682, ../sass/styles.scss */
 .reportingBar {
   display: inline-block;
   width: 70%;
 }
 
-/* line 641, ../sass/styles.scss */
+/* line 687, ../sass/styles.scss */
 .statistic, .statistic-free, .statistic-compare {
   color: #666;
   font-weight: 400;
 }
 
-/* line 645, ../sass/styles.scss */
+/* line 691, ../sass/styles.scss */
 .statistic-free {
   padding-right: 5px;
 }
 
-/* line 648, ../sass/styles.scss */
+/* line 694, ../sass/styles.scss */
 .compare {
   color: #666;
   margin: 0;
   cursor: pointer;
 }
 
-/* line 653, ../sass/styles.scss */
+/* line 699, ../sass/styles.scss */
 .compare:hover {
   color: #000;
   cursor: hand;
   text-decoration: underline;
 }
 
-/* line 658, ../sass/styles.scss */
+/* line 704, ../sass/styles.scss */
 #compare_1, #compare_2, #compare_title {
   margin-left: 10px;
 }
 
-/* line 661, ../sass/styles.scss */
+/* line 707, ../sass/styles.scss */
 #compare_1, #compare_2 {
   margin-bottom: 0;
 }
 
 /** Bootstrap 2 Progress Bar */
-/* line 666, ../sass/styles.scss */
+/* line 712, ../sass/styles.scss */
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -11350,7 +11436,7 @@ Span Styling
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 686, ../sass/styles.scss */
+/* line 732, ../sass/styles.scss */
 .progress .bar {
   float: left;
   width: 0;
@@ -11378,14 +11464,14 @@ Span Styling
   transition: width 0.6s ease;
 }
 
-/* line 713, ../sass/styles.scss */
+/* line 759, ../sass/styles.scss */
 .progress .bar + .bar {
   -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* line 719, ../sass/styles.scss */
+/* line 765, ../sass/styles.scss */
 .progress-striped .bar {
   background-color: #149bdf;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -11399,7 +11485,7 @@ Span Styling
   background-size: 40px 40px;
 }
 
-/* line 732, ../sass/styles.scss */
+/* line 778, ../sass/styles.scss */
 .progress.active .bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -moz-animation: progress-bar-stripes 2s linear infinite;
@@ -11408,7 +11494,7 @@ Span Styling
   animation: progress-bar-stripes 2s linear infinite;
 }
 
-/* line 741, ../sass/styles.scss */
+/* line 787, ../sass/styles.scss */
 .progress-danger .bar,
 .progress .bar-danger {
   background-color: #dd514c;
@@ -11421,7 +11507,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffc43c35', GradientType=0);
 }
 
-/* line 753, ../sass/styles.scss */
+/* line 799, ../sass/styles.scss */
 .progress-danger.progress-striped .bar,
 .progress-striped .bar-danger {
   background-color: #ee5f5b;
@@ -11432,7 +11518,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 763, ../sass/styles.scss */
+/* line 809, ../sass/styles.scss */
 .progress-success .bar,
 .progress .bar-success {
   background-color: #5eb95e;
@@ -11445,7 +11531,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff57a957', GradientType=0);
 }
 
-/* line 775, ../sass/styles.scss */
+/* line 821, ../sass/styles.scss */
 .progress-success.progress-striped .bar,
 .progress-striped .bar-success {
   background-color: #62c462;
@@ -11456,7 +11542,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 785, ../sass/styles.scss */
+/* line 831, ../sass/styles.scss */
 .progress-info .bar,
 .progress .bar-info {
   background-color: #4bb1cf;
@@ -11469,7 +11555,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff339bb9', GradientType=0);
 }
 
-/* line 797, ../sass/styles.scss */
+/* line 843, ../sass/styles.scss */
 .progress-info.progress-striped .bar,
 .progress-striped .bar-info {
   background-color: #5bc0de;
@@ -11480,7 +11566,7 @@ Span Styling
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 807, ../sass/styles.scss */
+/* line 853, ../sass/styles.scss */
 .progress-warning .bar,
 .progress .bar-warning {
   background-color: #faa732;
@@ -11493,7 +11579,7 @@ Span Styling
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
 }
 
-/* line 819, ../sass/styles.scss */
+/* line 865, ../sass/styles.scss */
 .progress-warning.progress-striped .bar,
 .progress-striped .bar-warning {
   background-color: #fbb450;
@@ -11505,35 +11591,35 @@ Span Styling
 }
 
 /**Datatables Override*/
-/* line 829, ../sass/styles.scss */
+/* line 875, ../sass/styles.scss */
 .dataTables_filter {
   display: inline-block !important;
   vertical-align: top !important;
   float: right !important;
 }
 
-/* line 835, ../sass/styles.scss */
+/* line 881, ../sass/styles.scss */
 .dataTables_length {
   display: inline-block !important;
   vertical-align: top !important;
 }
 
-/* line 839, ../sass/styles.scss */
+/* line 885, ../sass/styles.scss */
 .dataTables_info {
   float: left !important;
 }
 
-/* line 842, ../sass/styles.scss */
+/* line 888, ../sass/styles.scss */
 .dataTables_paginate.paging_full_numbers {
   float: right !important;
 }
 
-/* line 845, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 .dataTables_paginate.paging_full_numbers a {
   margin-right: 2px;
 }
 
-/* line 851, ../sass/styles.scss */
+/* line 897, ../sass/styles.scss */
 a.paginate_button, a.paginate_active {
   margin-right: 2px;
 }

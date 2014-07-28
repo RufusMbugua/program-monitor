@@ -96,6 +96,52 @@ li a{
         }
     }
 }
+//Login
+#login-info{
+     @extend .col-md-6;
+}
+#login{
+    padding-top:5%;
+    @extend .col-md-6;
+    input{
+        @extend .form-control;
+    }
+    button{
+        @extend .btn;
+        @extend .btn-primary;
+    }
+}
+#navbar-right{
+    @extend .nav;
+    @extend .navbar-nav;
+    @extend .navbar-right;
+    @extend .navbar-form;
+    #logout_link{
+        font-weight:bolder;
+            color:crimson;
+    }
+    #logout_link:hover{
+        color: red;
+        text-decoration: none;
+    }
+    i{
+            padding-right:5px;
+     }
+    .user{
+        cursor: pointer;
+
+    }
+    .user:hover{
+        cursor: hand;
+        color:$stat_color_1;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+}
+
 h3{
     margin:0;
     margin-bottom:10px;

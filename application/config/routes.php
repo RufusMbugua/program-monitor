@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "county_profile";
+$route['default_controller'] = "users/login";
 $route['404_override'] = '';
 
 
