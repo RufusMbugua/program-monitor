@@ -1,3 +1,6 @@
 application/cache
 application/logs
 logs
+
+application/config/database.php
+application/config/globals.php
