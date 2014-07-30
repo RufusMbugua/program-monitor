@@ -11,6 +11,8 @@ class County_Profile extends MY_Controller
         $this->load->model('county_profile_model');
         $this->childTotal = 0;
         $this->womenTotal = 0;
+        $this->load->module('users');
+
     }
 
     public function index() {
@@ -23,6 +25,7 @@ class County_Profile extends MY_Controller
         $data['latest_training'] = $this->latest_training(10);
         $data['womenTotal']=$this->womenTotal;
         $data['childTotal']=$this->childTotal;
+        $this->users->check_session();
         $this->template($data);
     }
 

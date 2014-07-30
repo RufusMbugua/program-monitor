@@ -54,6 +54,13 @@ class Users extends MY_Controller
     }
     public function edit_user() {
     }
+
+    public function check_session(){
+        $username=$this->session->userdata('user_name');
+        if($username==false){
+            redirect('users/login');
+        }
+    }
     public function get_user_info($username,$password) {
         $results = $this->db->get_where('users',array('user_email' => $username, 'user_password' => $password));
 
