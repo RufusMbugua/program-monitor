@@ -75,9 +75,9 @@ function run(data){
     newData=data.split(',')
     $('#county .text').text(newData[0]);
     $('#under5 .text').text('Childen Under Five Years');
-    $('#under5 .digit').text(newData[1]);
+    $('#under5 .digit').text(numeral(newData[1],'0,0'));
     $('#women .text').text('Women of Reproductive Age');
-    $('#women .digit').text(newData[2]);
+    $('#women .digit').text(numeral(newData[2],'0,0'));
 }
 
 $('#baseline_total_mnh').load('<?php echo $this -> config -> item('project_url');?>/c_analytics/getTotalCounties/mnh');
