@@ -61,35 +61,11 @@ echo $maps; ?>
 
         </div>
     </div>
-    <div class="outer">
-    <h3>Demand Generation</h3>
-    <div class="inner">
 
-
-        </div>
-    </div>
 
 
     </div>
-    <div class="standard-graph-lg">
 
-    <div class="outer">
-    <h3>Assessment</h3>
-    <div class="inner">
-            <div class="summary"><span class="text">Baseline</span> <span id="baseline_total_mnh" class="digit"></span><span class="digit divider" style="color:#000000;margin:0 5px 0 5px">|</span><span class="digit" id="baseline_total_ch"></div>
-            <div class="summary">Midterm</span><span></span></div>
-
-        </div>
-    </div>
-    <div class="outer">
-    <h3>Commodity Availability</h3>
-    <div class="inner">
-
-
-        </div>
-    </div>
-
-    </div>
 
 </div>
 
