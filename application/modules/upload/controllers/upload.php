@@ -36,7 +36,7 @@ class Upload extends MY_Controller
         
         //die();
         $file_1 = "upload_button";
-        
+        print_r($_FILES);die;
         if ($type == 'slk') {
             
             //$edata = new Spreadsheet_Excel_Reader();
@@ -82,7 +82,7 @@ class Upload extends MY_Controller
             //echo($data);die;
             $data = $this->formatData($data);
             
-            //echo '<pre>';print_r($data);echo '</pre>';die;
+            echo '<pre>';print_r($data);echo '</pre>';die;
             
             //$this -> createTables();
             
